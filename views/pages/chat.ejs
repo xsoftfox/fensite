@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<head>
+  <title>chat :3</title>
+  <%-include('partial/head', {title: 'chat'});%>
+  <style>
+    @media screen and (max-width:700px){
+    #msgcontainer{
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        bottom: 0;
+        padding-bottom: 3rem;
+    }
+    #form {
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        margin: auto;
+        width: auto;
+    }
+    body {
+        padding-bottom: 3rem;
+        margin: 0;
+    }
+  }
+    </style>
+</head>
+  <body>
+      <div id="msgcontainer">
+        <div id="messages"></div>
+      </div>
+      <end id="end"></end>
+    
+    <form id="form" action="">
+      <div id="attachpopup">
+        <p>until i get this button to work, you can use <m>&lt;img&gt;</m> <m>&lt;video&gt;</m> <m>&lt;audio&gt;</m> or <m>&lt;a&gt;</m> html tags to send media, like this:</p>
+        <br>
+        <p><m>&lt;img src=&quot;https://fennec.lol/balls/fen.jpg&quot; /&gt;</m></p>
+        <p><m>&lt;video src=&quot;https://fennec.lol/files/funny.mp4&quot; /&gt;</m></p>
+        <p><m>&lt;a href=&quot;https://e621/net&quot;&gt;free vbucks&lt;/a&gt;</m></p>
+        <br>
+        <p>just replace <m>src=""</m> with the link to your pic inside the quotes</p>
+        <br>
+        <p>other tags are converted to plaintext and width is set automatically to avoid the page exploding from silly scripts and too big images</p><br>
+      </div>
+      <div id="menu">
+        <img src="/icons/edit.svg" onClick="namePrompt()"></img>
+        <input type="color" id="color" value="#ffffff"/>
+        <p id="x3" onclick="alert(':3')">:3</p>
+      </div>
+      <button type="button" onclick="attachmenu()"><img src="/icons/paperclip.svg"></img></button>
+      <button type="button" onclick="menuOpen()"><img src="/icons/menu.svg"></img></button>
+      <input type="text" id="input" autocomplete="off" />
+      <button type="submit"><img src="/icons/send.svg"></img></button>
+    </form>
+  </body>
+<script src="/chat/socket.io/socket.io.min.js"></script>
+<script>
+
+var socket = io("/chat", { path: "/chat/socket.io" });
+var form = document.getElementById('form');
+var input = document.getElementById('input');
+var messages = document.getElementById('messages');
+
+
+//get chat messages
+async function fetch() {
+  let response = new Promise(function(resolve) {
+    let req = new XMLHttpRequest();
+    req.open('GET', '/chat/messages');
+    req.onload = function() {
+      if (req.status == 200) {
+        resolve(JSON.parse(req.response));
+      } else {
+        resolve(alert("error loading messages :("));
+      }
+    };
+    req.send();
+  });
+  listMsg(await response);
+};
+
+function listMsg(res) {
+for (var i = 0; i < res.length; i++) {
+  var time = new Date(res[i].timestamp).toLocaleTimeString(navigator.language, { hour12: true, hour: "numeric", minute: "numeric"});
+  var p = document.createElement('p');
+  p.innerHTML = `<user>${res[i].user}</user>: <message style="color:${res[i].color};">${res[i].message}</message><d>${time}</d>`;
+  messages.appendChild(p);
+}
+};
+
+//socket.io
+form.addEventListener('submit', (e) => {
+  e.preventDefault();
+  if (input.value) {
+      var name = localStorage.getItem('name') || 'anon';
+      socket.emit('chat message', { user: name, message: input.value, color: color.value});
+      input.value = '';
+    }
+});
+
+socket.on('chat message', (data) => {
+  var li = document.createElement('p');
+  var time = new Date().toLocaleTimeString(navigator.language, { hour12: true, hour: "numeric", minute: "numeric"});
+  li.innerHTML = `<user>${data.user}</user>: <message style="color:${data.color};">${data.message}</message><d>${time}</d>`;
+  messages.appendChild(li);
+});
+
+
+function setNameOnLoad() {
+  var name = localStorage.getItem('name') || 'anon';
+  input.setAttribute('placeholder', 'chatting as ' + name);
+}
+
+function namePrompt(){
+  var name = prompt("change name", localStorage.getItem("name"));
+  localStorage.setItem("name", name);
+  input.setAttribute('placeholder', 'chatting as ' + name);
+}
+
+function menuOpen() {
+  var menu = document.getElementById("menu");
+  if (menu.style.display === "block") {
+    menu.style.display = "none";
+  } else {
+    menu.style.display = "block";
+  }
+} 
+
+function attachmenu() {
+  var popup = document.getElementById("attachpopup");
+
+  if (popup.style.display === "block") {
+      popup.style.display = "none";
+    } else {
+      popup.style.display = "block";
+    }
+}
+
+fetch();
+setNameOnLoad();
+</script>
+</html>

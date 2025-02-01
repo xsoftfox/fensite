@@ -1,0 +1,12 @@
+<!DOCTYPE html>
+<head>
+<%- include("partial/head"); %>
+</head>
+<body>
+    <h2>1000 checkboxes :3</h2>
+    <div id="boxes">
+        <% for (var i = 0; i < 1000; i++) { %>
+            <input type="checkbox" id="<%= i %>"</input>
+        <%}%>
+    </div>
+</body>

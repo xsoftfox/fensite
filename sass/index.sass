@@ -1,0 +1,154 @@
+body
+    margin: 50px auto
+    background-color: #242b3c
+    background: linear-gradient(45deg, #59246c 0%, #3f135e 50%, #242b3c 100%)
+
+.card-container
+    width: 900px
+    margin-left: auto
+    margin-right: auto
+    word-break: break-word
+    display: flex
+    
+.card
+    background: #47557570//#4b577359
+    //background: linear-gradient(350deg, rgba(60,70,95,.6) 0%, rgba(67, 82, 119, 0.6) 100%)
+    width: 220px
+    margin: 10px 20px 40px 20px
+    padding: 10px 20px 10px 20px
+    border-radius: 20px
+    text-align: center
+    //border: 4px solid #74459f2b
+    box-shadow: 0px 0px 5px 5px #1f263726
+
+    img
+        width: 100%
+        border-radius: 15px
+
+.button
+    display: inline-block
+    background: #303851c4//#16192340
+    border-radius: 10px
+    padding: 15px 20px 15px 20px
+    margin-bottom: 10px
+    font-size: 15px
+    width: 60%
+    transition-duration: 0.15s
+    &:hover, &:focus
+        background: #1b202c 
+        transform: scale(105%)
+    &:active
+            transform: scale(95%)
+
+.column
+    display: block
+
+#statusCard
+    text-align: left
+
+#chatCard
+    text-align: left
+    #chatHeader
+        height: 40px
+    #chat
+        max-height: 200px
+        display: flex
+        flex-direction: column-reverse
+        mask-image: linear-gradient(to top, transparent 0%, black 10%, black 90%, transparent 100%)
+        overflow-y: scroll
+        overflow-x: hidden
+        -ms-overflow-style: none
+        scrollbar-width: none
+    #chat::-webkit-scrollbar
+       display: none
+    #messages
+        padding-bottom: 20px
+    a
+        position: relative
+        left: 200px
+        bottom: 50px
+    img
+        width: 24px
+        height: 24px
+    div
+        p
+            margin: 5px
+
+#musicCard
+    display: none
+    #overflow
+        overflow: hidden
+    #songTitle
+        width: fit-content
+        white-space: nowrap
+        animation: xscroll 5s linear infinite
+    #musicbuttons
+        audio::-webkit-media-controls-enclosure
+            background-color: #9fadd2
+        audio
+            width: 200px
+            border-radius: 15px
+        img
+            width: 25px
+            height: 25px
+            margin-top: 10px
+            transition-duration: 0.2s
+            &:hover
+                transform: scale(120%)
+            &:active
+                transform: scale(90%)
+
+@keyframes xscroll 
+    0%
+        transform: translateX(70%)
+    100%
+        transform: translateX(-90%)
+
+
+#fenCard
+    #fenbuttons
+        img
+            width: 25px
+            height: 25px
+            margin-top: 10px
+            transition-duration: 0.15s
+            &:hover
+                transform: scale(110%)
+            &:active
+                transform: scale(98%)
+
+#themeCard
+    pp
+        display: block
+    p
+        display: inline
+
+//leave at bottom
+@media screen and (max-width: 900px)
+  .card-container
+    display: block
+    width: 100vw
+
+  .card
+    margin-bottom: 20px
+
+  .column
+    margin-left: auto
+    margin-right: auto
+    display: grid
+    justify-items: center
+
+  #musicCard
+    display: none
+
+  #chatCard
+    order: 3
+
+  #musicCard
+    order: 2
+
+canvas
+    position: fixed
+    top: 0px
+    left: 0px
+    z-index: -2

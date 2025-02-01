@@ -1,0 +1,17 @@
+{
+    "name": "homepage",
+    "short_name": "home",
+    "theme_color": "#ffcbe4",
+    "background_color": "#fa99ca",
+    "display": "standalone",
+    "scope": "/homepage",
+    "start_url": "https://v2.fennec.lol/homepage",
+    "description": ":3",
+    "orientation": "any",
+    "icons": [
+        {
+            "src": "https://v2.fennec.lol/favicon.png",
+            "sizes": "256x256"
+        }
+    ]
+}

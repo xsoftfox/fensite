@@ -1,0 +1,48 @@
+.back
+    position: fixed
+    
+body
+    font-size: 20px
+    height: 100vh
+
+#pause, #play
+    width: 80px
+    height: 80px
+    position: fixed
+    bottom: 10px
+    right: 10px
+    z-index: 2
+    
+#credits
+    position: relative
+    top: 0
+    animation: auto-scroll 15s linear infinite
+    animation-play-state: running
+    margin-left: auto
+    margin-right: auto
+
+table
+    margin: 621px auto 300px auto
+td
+    padding-bottom: 20px
+
+td:nth-child(1)
+    text-align: right
+    padding-right: 15px
+
+td:nth-child(2)
+    text-align: left
+    width: 160px
+
+h1, h2
+    text-align: center
+    padding-bottom: 20px
+
+#space
+    margin-bottom: 300px
+
+@keyframes auto-scroll
+    0% 
+        top: 0%
+    100%
+        top: -200%

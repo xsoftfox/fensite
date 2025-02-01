@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<head>
+    <title>hi :3</title>
+    <%- include('../partial/head', {title: 'test_index'});%>
+    <style>
+        @media screen and (max-width:900px){
+        .card-container{
+          display: block;
+          width: 100vw
+        }
+        .card{
+          margin-bottom: 20px;
+        }
+        #column{
+          margin-left: auto;
+          margin-right: auto;
+          display: grid;
+          justify-items: center;
+        }
+        #card3{order:3;}
+        #card4{order:2;}
+        }
+    </style>
+</head>
+
+<body>
+    <h1>fennec.lol</h1>
+
+    <%
+    var d = new Date();
+    var day = d.getDay()
+    if (day == 5) { %>
+        <%- include ("partial/fenfriday"); %>
+    <%}%>
+<div class="card-container">
+    <div id="column">
+        <div id="card1" class="card">
+            <h3>status</h3>
+            <p></p>
+            <p>hi</p>
+        </div>
+        <div id="card4" class="card">
+            <h3>ass</h3>
+            <p>balls</p>
+            <p>balls</p>
+            <p>balls</p>
+            <p>balls</p>
+            <p>balls</p>
+        </div>
+    </div>
+    <div id="column">
+        <div id="card2" class="card">
+            <h3>links</h3>
+            <a href="/about" class="button">about</a>
+            <a href="/fens" class="button">fens</a>
+            <a href="/important" class="button">important pictures</a>
+            <a href="/files" class="button">files</a>
+            <a href="/qna" class="button">ask stuff</a>
+            <a href="/test" class="button">test</a>
+        </div>
+    </div>
+    <div id="column">
+        <div id="card3" class="card">
+            <h3>chat</h3>
+        </div>
+        <div id="card4" class="card">
+            <h3>balls</h3>
+            <p>ass</p>
+        </div>
+        <div id="card4" class="card">
+            <h3>test</h3>
+            <img src="/balls/fen.jpg"></img>
+        </div>
+    </div>
+</div>
+</cards>
+<p>this is just a wip</p>
+<a href="https://fennec.lol">return to the main site</a>
+</body>

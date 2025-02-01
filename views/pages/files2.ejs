@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<head>
+    <%-include('partial/head', {title: 'files'});%>
+</head>
+<body>
+  <div id="formcontainer">
+    <form action="/files/uppies" enctype="multipart/form-data" method="post">
+        <div>File: <input type="file" name="file" id="file" required onchange="validateSize(this)"/></div>
+        <button type="button" onclick="up()">upload</button>
+        <div id="loading">
+          <div><img src="/balls/fen.jpg"></img></div><p>uploading..</p>
+        </div>
+    </form>
+    <button type="button" title="refresh files" id="refButton" onclick="refresh()">refresh files</button>
+    <button type="button" title="delete" id="delButton" onclick="delMode()">delete</button>
+  </div>
+    <div id="files">
+    </div>
+</body>
+
+<script>
+function getExt(fname) {
+  return fname.slice((Math.max(0, fname.lastIndexOf(".")) || Infinity) + 1);
+}
+
+function listFiles(res) {
+var list = "";
+for (var i = 0; i < res.length; i++) {
+    type = getExt(res[i]);
+    if (type == "") {type = "file";};
+    list = list + "<a title='" + res[i] + "' href='/files/" + res[i] + "'/><img class='f' src='/icons/" + type + ".svg'/> " + res[i] + "</a>";
+}
+document.getElementById('files').innerHTML = list;
+};
+
+async function getFiles() {
+  var response = await fetch("/files/listfiles")
+  .then(response => {
+      console.log(response);
+      if (response.status == 200) {
+        listFiles(response);
+      } else {
+        alert("error loading files :(");
+      }
+    });
+  
+}
+
+getFiles();
+
+function refresh() {
+    document.getElementById("files").innerHTML = "";
+    getFiles();
+    document.getElementById("refButton").innerHTML = "refresh files";
+    document.getElementById("delButton").style.display = "";
+}
+
+function validateSize(input) {
+  var fileSize = input.files[0].size / 1024 / 1024; // in MiB
+  if (fileSize > 200) {
+    document.getElementById('file').value= null;
+    alert('file too THICC');
+  }
+}
+
+//delete
+//this is so unoptimised
+
+function delList(res) {
+var list = "";
+for (var i = 0; i < res.length; i++) {
+  list = list + "<a title='" + res[i] + "' onclick='delFile(`" + res[i] + "`)' href='#'/><img class='f' src='/icons/del.svg'/> " + res[i] + "</a>";
+}
+document.getElementById('files').innerHTML = list;
+};
+
+
+//fix this to use fetch
+async function getDelFiles(url) {
+  let response = new Promise(function(resolve) {
+    let req = new XMLHttpRequest();
+    req.open('POST', url);
+    req.onload = function() {
+      if (req.status == 200) {
+        resolve(JSON.parse(req.response));
+      } else {
+        resolve(alert("error loading files :("));
+      }
+    };
+    req.send();
+  });
+  delList(await response);
+}
+
+function delMode() {
+    getDelFiles('/files/listfiles');
+    document.getElementById("delButton").style.display = "none";
+    document.getElementById("refButton").innerHTML = "nvm";
+}
+
+function delFile(file) {
+  if (confirm("delete " + file + " for ever and ever ?") == true) {
+    fetch("/files/yeet/" + file);
+    getDelFiles('/files/listfiles');
+  }
+}
+
+//upload maybe ??
+
+function up() {
+  var fileInput = document.getElementById('file');
+  var formData = new FormData();
+
+  formData.append('file', fileInput.files[0]);
+
+  var options = {
+    method: 'POST',
+    body: formData,
+  };
+
+  document.getElementById('loading').style.display = "block"
+
+  fetch('/files/uppies', options)
+    .then((response) => {
+      if (response.status == "201") {
+        document.getElementById('loading').style.display = "none";
+        alert("file uploaded :3");
+        console.log(response);
+      } else {
+        alert("file not uploaded :( ["+ response.status +"]");
+      }
+      
+    })
+    refresh();
+};
+
+//damn this is messy
+
+//so much code how do i simplify this
+
+</script>

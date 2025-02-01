@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<head>
+<%- include("partial/head"); %>
+</head>
+<body>
+<h1>Mochi :3</h1>
+<h4>fennec fox</h4>
+<hr style="width: 200px">
+<ul>
+    <li>silly :p</li>
+    <li><b>big</b> ol ears</li>
+    <li>can wear any outfit</li>
+    <li>aaaaaaaaaaaaa</li>
+</ul>
+<br>
+<br>
+<br>
+
+<img class="ref" src="mochiref.png">
+
+<div id="colors">
+    <span class="dot" style="background-color: #d2eaff;"></span><p>#d2eaff</p>
+    <span class="dot" style="background-color: #fff3c6;"></span><p>#fff3c6</p>
+    <span class="dot" style="background-color: #585858;"></span><p>#585858</p>
+    <span class="dot" style="background-color: #fffcf2;"></span><p>#fffcf2</p>
+</div>
+
+<p>you can see more on my <a href="//instagram.com/xsoftfox">instagram </a>:3</p>
+
+<br>
+
+<p>gift art is welcome !! <3</p>
+
+<br><br><br><br><br><br><br><br><br><br>
+
+<u id="butt" onclick="owo();">nsfw ref</u>
+
+<div id="owo" onclick="reveal()">
+    <img class="ref blur" id="oworef" src="iknowwhatyouare.png">
+    <div id="overlay">
+        <p>🔞THIS PICTURE CONTAINS BALLS !!!!🔞</p><br>
+        <p>are you sure you want to see ??</p><br><br>
+        <p><b>click to reveal</b></p>
+    </div>
+</div>
+<p id="hiddentext" onclick="revealreal()">click here for real image (last warning !!)</p>
+
+<br>
+<br>
+<br>
+</body>
+<script>
+    function reveal() {
+        document.getElementById("oworef").classList.remove("blur");
+        document.getElementById("overlay").style.display = "none";
+        document.getElementById("hiddentext").style.display = "block";
+    }
+
+    function revealreal() {
+        document.getElementById('oworef').src = "owo.png";
+        document.getElementById("hiddentext").style.display = "none";
+    }
+
+    function owo() {
+        var owo = document.getElementById("owo");
+        var butt = document.getElementById("butt");
+        if (owo.style.display === "block") {
+            owo.style.display = "none";
+            butt.innerText = ">w<";
+            document.getElementById("hiddentext").style.display = "none";
+            document.getElementById("oworef").classList.add("blur");
+            document.getElementById("overlay").style.display = "block";
+            document.getElementById('oworef').src = "iknowwhatyouare.png";
+        } else {
+            owo.style.display = "block";
+            butt.innerText = "owo";
+        }
+    }
+</script>

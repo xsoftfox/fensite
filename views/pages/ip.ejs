@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<head>
+<%- include("partial/head"); %>
+</head>
+<body>
+  <div>
+    <p id="ip"><%= req.ip %></p>
+  </div>
+  <p id="b"></p>
+</body>
+<script>
+var ip = document.getElementById("ip").innerHTML;
+
+if (ip.includes("f")) {
+  document.getElementById("b").innerHTML = "(ipv6)";
+} else {
+  document.getElementById("b").innerHTML = "(ipv4)";
+}
+</script>

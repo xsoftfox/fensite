@@ -1,0 +1,11 @@
+<% if (typeof title === 'undefined') { title = 'title'}; %>
+<title><%= title %></title>
+<link rel="stylesheet" href="/styles/main.css"/>
+<link rel="stylesheet" href="" id="theme"/>
+<link rel="stylesheet" href="/styles/<%= title %>.css"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta charset="UTF-8">
+<link rel="icon" href="/favicon.ico">
+<% if (title !== "index") {%>
+<a href="/"><img class="back" src="/icons/back.svg" title="back"></img></a>
+<%}%>

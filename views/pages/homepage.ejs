@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<head>
+<link rel=“manifest” href=“manifest.json” />
+<%- include("partial/head", {title: 'homepage'}); %>
+</head>
+<body>
+    <div class="main">
+        <div class="links">
+            <% for (var [url, title] of Object.entries(links)) { %>
+            <a class="tile" href="<%=url%>">
+                <div class="tile-inner">
+                    <img class="favicon" src="<%=url%>/favicon.ico" />
+                </div>
+                <p class="title"><%=title%></p>
+            </a>
+            <%}%>
+            <a class="tile" id="addtile" href="#">
+                <div class="tile-inner">
+                    <img class="favicon" src="/icons/plus-circle.svg" />
+                </div>
+                <p class="title">add shortcut</p>
+            </a>
+        </div>
+    </div>
+</body>
+<script>
+    if ('serviceWorker' in navigator) {
+        navigator.serviceWorker.register("sw.js")
+        .then(function(reg) {
+            console.log("service worker registered :3 " + reg.scope);
+        })
+        .catch(function(error) {
+          console.log('aw tits, ', error);
+        });
+    }
+
+   </script>

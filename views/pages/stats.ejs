@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<head>
+<%- include("partial/head", {title: "stats"}); %>
+</head>
+<body>
+    <div id="main-container">
+        <h2>Site Stats
+        </h2>
+            <p>hi ill prob put some extra text here later</p>
+
+            <div class="tab">
+              <button class="tablinks active" onclick="openTab(event, 'tab1')" id="defaultOpen">visitors</button>
+              <button class="tablinks" onclick="openTab(event, 'tab2')">referrals</button>
+              <button class="tablinks" onclick="openTab(event, 'tab3')">user agents</button>
+              <button class="tablinks" onclick="openTab(event, 'tab4')">uptime</button>
+            </div>
+
+            <div id="tab1" class="tabcontent" style="display:block;">
+              <table>
+                <tbody>
+                    <tr>
+                        <td>total visits</td>
+                        <td><%=visits.total%></td>
+                    </tr>
+                    <tr>
+                        <td>visits today</td>
+                        <td><%=visits.today%></td>
+                    </tr>
+                    <tr>
+                        <td>average visits/day</td>
+                        <td><%=visits.avg%></td>
+                    </tr>
+                    <tr>
+                        <td>unique visits</td>
+                        <td><%=visits.totalUnique%></td>
+                    </tr>
+                    <tr>
+                        <td>unique visits today</td>
+                        <td><%=visits.todayUnique%></td>
+                    </tr>
+                </tbody>
+            </table>
+            <p class="tiny"><i>since 6/2/24</i></p>
+            </div>
+
+            <div id="tab2" class="tabcontent">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>referrer</th>
+                            <th>times seen</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <% for (const [str, value] of Object.entries(ref)) { %>
+                            <tr>
+                            <td><%= str %></td>
+                            <td><%= value %></td>
+                            </tr>
+                        <% } %>
+                    </tbody>
+                </table>
+            </div>
+
+            <div id="tab3" class="tabcontent">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>user agent string</th>
+                            <th>times seen</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <% for (var [str, value] of Object.entries(ua)) { %>
+                            <tr>
+                            <td><%= str %></td>
+                            <td><%= value %></td>
+                            </tr>
+                        <% } %>
+                    </tbody>
+                </table> 
+                <p>your current user agent is:</p><p id="ua"></p>
+            </div>
+
+            <div id="tab4" class="tabcontent">
+              <iframe src="https://stats.uptimerobot.com/SEzzGaUjSN"></iframe>
+              <br><br>
+              <a href="https://stats.uptimerobot.com/SEzzGaUjSN">https://stats.uptimerobot.com/SEzzGaUjSN</a>
+            </div>
+    </div>
+</body>
+<script>
+    function openTab(evt, tab) {
+      var i, tabcontent, tablinks;
+      
+      tablinks = document.getElementsByClassName("tablinks");
+      for (i = 0; i < tablinks.length; i++) {
+        tablinks[i].className = tablinks[i].className.replace("active", "");
+      }
+
+      tabcontent = document.getElementsByClassName("tabcontent");
+      for (i = 0; i < tabcontent.length; i++) {
+        tabcontent[i].style.display = "none";
+      }
+
+      document.getElementById(tab).style.display = "block";
+      evt.currentTarget.className += " active";
+    }
+    //there has to be a more efficient way to do this
+    
+    document.getElementById("ua").innerText = window.navigator.userAgent;
+  
+
+    </script>
+       

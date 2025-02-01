@@ -1,0 +1,122 @@
+body
+  padding-bottom: 3rem
+
+.back
+    position: fixed
+
+#menu
+  position: absolute
+  width: 50px
+  height: 110px
+  border-radius: 30px
+  background-color: #424d665e
+  display: none
+  transform: translate(44px, -115px)
+  backdrop-filter: blur(5px)
+  img
+    width: 20px
+    height: 20px
+    position: relative
+    top: 12px
+
+#form
+  background: rgba(32, 37, 49, 0.9)
+  padding: 0.25rem
+  display: flex
+  height: 3rem
+  box-sizing: border-box
+  //backdrop-filter: blur(10px)
+  margin: 0px auto 0px auto
+  width: 500px
+
+#input
+  border: none
+  padding: 0 1rem
+  flex-grow: 1
+  border-radius: 2rem
+  margin: 0.25rem
+
+  &:focus
+    outline: none
+
+#form > button
+  background: #30394fa1
+  border: none
+  padding: 10px
+  margin-left: 4px
+  border-radius: 20px
+  outline: none
+  color: #fff
+  &:active
+    transform: scale(95%)
+  img
+    width: 20px
+    height: 20px
+
+#msgcontainer
+  margin: auto
+  width: 500px
+  height: 80vh
+  overflow-y: scroll
+  display: flex
+  flex-direction: column-reverse
+
+#messages
+  margin-top: 50px
+  text-align: left
+  word-break: break-all
+  background-color: #171b25
+
+  p
+    padding: 10px
+    margin: auto
+    background: #3d455a
+
+    &:nth-child(odd)
+      background: #293042
+
+    img, video, audio
+      border-radius: 10px
+
+d
+  float: right
+  color: #505c779e
+  font-size: 10px
+  padding-top: 3px
+  
+
+
+#attachpopup
+  display: none
+  width: 380px
+  height: 220px
+  position: absolute
+  background: #424d665e
+  backdrop-filter: blur(25px)
+  border-radius: 15px
+  transform: translateY(-240px)
+  text-align: left
+  font-size: 12px
+  padding: 5px
+  p
+    margin: 5px
+
+  m
+    font-family: monospace
+    background: #0000002e
+
+#x3
+  font-weight: 800 
+  cursor: pointer
+  padding: 5px 0
+  margin-top: 18px
+
+input[type=color]
+  border-radius: 8px
+  width: 25px
+  height: 25px
+  position: relative
+  top: 18px
+  border: 0
+  padding: 0
+  margin: 0 5px

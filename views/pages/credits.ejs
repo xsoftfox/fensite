@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<head>
+<%- include("partial/head"); %>
+</head>
+<body>
+    <img id="pause" src="/icons/pause.svg" onclick="animPause()"></img>
+    <img id="play" src="/icons/play.svg" onclick="animPlay()" style="display:none;"></img>
+
+    <div id="credits">
+        <table>
+        <tr><td colspan="2"><h1>credsits</h1></td></tr>
+        <tr><td colspan="2"><h2>site</h2></td></tr>
+        <tr>
+            <td>bad code</td><td>me</td>
+        </tr>
+        <tr>
+            <td>design</td><td>also me</td>
+        </tr>
+        <tr>
+            <td>hosting</td><td>my old laptop from 2014</td>
+        </tr>
+        <tr><td colspan="2"><h2>resources</h2></td></tr>
+        <tr>
+            <td>coding help</td><td><a href="https://w3schools.com">w3schools.com</a></td>
+        </tr>
+        <tr>
+            <td>more coding help</td><td><a href="https://stackoverflow.com">stackoverflow.com</a></td>
+        </tr>
+        <tr>
+            <td>most icons</td><td><a href="https://feathericons.com">feathericons.com</a></td>
+        </tr>
+	<tr><td colspan="2"><h2>and viewers like you :)</h2></td></tr>
+        <tr><td colspan="2"><br><br><br><br></td></tr>
+        <tr><td colspan="2"><h1>thamks</h1></td></tr>
+        <tr><td colspan="2"><h2>:3</h2></td></tr>
+        </table> 
+    </div>
+</body>
+
+<script>
+
+play = document.getElementById("play")
+pause = document.getElementById("pause")
+creds = document.getElementById("credits");
+
+function animPause() {
+    creds.style.animationPlayState = 'paused';
+    pause.style.display = "none";
+    play.style.display = "block";
+}
+
+function animPlay() {
+    creds.style.animationPlayState = 'running';
+    play.style.display = "none";
+    pause.style.display = "block";
+}
+
+</script>

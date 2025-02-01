@@ -1,0 +1,84 @@
+img
+    width: 24px
+    height: 24px
+    color: #ffffff
+    transform: translateY(7px)
+    padding-right: 5px
+
+#files
+    text-align: left
+    max-width: 350px
+    overflow: hidden
+    text-overflow: ellipsis
+    white-space: nowrap
+    background: #3c465fa1
+    padding: 15px
+    border-radius: 20px
+    margin-left: auto
+    margin-right: auto
+    a
+        display: block
+        padding: 0px 8px 8px 8px
+        border-radius: 18px
+        &:hover, &:focus
+            background: #4b597a
+
+button
+    border-color: transparent
+    transition-duration: .5s
+    padding: 10px 20px 10px 20px
+    border-radius: 10px
+    background-color: #707fa49e
+    color: white
+    margin-bottom: 20px
+    &:hover, &:focus
+        transform: scale(105%)
+    &:active
+        transform: scale(95%)
+
+
+form
+    width: 200px
+    background-color: #707fa49e
+    margin-bottom: 20px
+    padding: 10px 20px 10px 20px
+    border-radius: 10px
+    overflow: hidden
+    margin-left: auto
+    margin-right: auto
+
+#formcontainer
+    background: #3c465fa1
+    margin-top: 69px
+    margin-bottom: 20px
+    padding: 40px 15px 15px 15px
+    border-radius: 20px
+    max-width: 350px
+    margin-left: auto
+    margin-right: auto
+
+input
+    //background-color: #5f6a889e
+
+#loading
+    display: none
+    img
+        width: 20px
+        animation: wide 1s infinite
+    div
+        animation: spin 1s infinite
+
+@keyframes spin
+    0%
+        transform: rotate(0deg)
+
+    100%
+        transform: rotate(360deg)
+
+@keyframes wide
+    0%
+        transform: scaleX(1) 
+    50%
+        transform: scaleX(2.5)
+    100%
+        transform: scaleX(1)

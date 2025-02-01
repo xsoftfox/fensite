@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created using Krita: https://krita.org -->
+
+<svg
+   width="23.04pt"
+   height="23.04pt"
+   viewBox="0 0 23.04 23.04"
+   version="1.1"
+   id="svg1"
+   sodipodi:docname="expand.svg"
+   inkscape:version="1.3.2 (091e20e, 2023-11-25, custom)"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview1"
+     pagecolor="#ffffff"
+     bordercolor="#000000"
+     borderopacity="0.25"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     inkscape:document-units="pt"
+     inkscape:zoom="37.011717"
+     inkscape:cx="15.400528"
+     inkscape:cy="14.65752"
+     inkscape:window-width="2560"
+     inkscape:window-height="1351"
+     inkscape:window-x="2391"
+     inkscape:window-y="569"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="svg1" />
+  <defs
+     id="defs1" />
+  <g
+     id="Double_Chevron_Down"
+     transform="matrix(-0.81512712,-0.81512712,0.81512712,-0.81512712,14.129684,34.9366)"
+     fill="none"
+     style="fill:#ffffff;fill-opacity:1">
+    <path
+       id="shape0"
+       transform="translate(7.9915,15.05475)"
+       fill="#121313"
+       stroke-opacity="0"
+       stroke="#000000"
+       stroke-width="0"
+       stroke-linecap="square"
+       stroke-linejoin="bevel"
+       d="m 14.2935,0.29425 -6.285,6.195 -6.285,-6.196 c -0.394,-0.391 -1.034,-0.391 -1.428,0 -0.394,0.391 -0.394,1.024 0,1.414 l 6.999,6.899 c 0.379,0.375 1.048,0.377 1.429,0 l 6.999,-6.9 c 0.394,-0.39 0.394,-1.024 0,-1.414 -0.395,-0.389 -1.035,-0.389 -1.429,0.002 z"
+       sodipodi:nodetypes="cccccccccc"
+       style="fill:#ffffff;fill-opacity:1" />
+    <path
+       id="shape1"
+       transform="translate(7.9915,8.05575)"
+       fill="#121313"
+       stroke-opacity="0"
+       stroke="#000000"
+       stroke-width="0"
+       stroke-linecap="square"
+       stroke-linejoin="bevel"
+       d="m 7.2945,8.60625 c 0.379,0.375 1.048,0.377 1.429,0 l 6.999,-6.899 c 0.394,-0.391 0.394,-1.024 0,-1.414 -0.394,-0.391 -1.034,-0.391 -1.428,0 l -6.286,6.195 -6.285,-6.195 c -0.394,-0.391 -1.034,-0.391 -1.428,0 -0.394,0.391 -0.394,1.024 0,1.414 z"
+       sodipodi:nodetypes="cccccccccc"
+       style="fill:#ffffff;fill-opacity:1" />
+  </g>
+  <g
+     id="group0"
+     transform="matrix(0.72 0 0 0.72 0 0)"
+     fill="none" />
+  <g
+     id="group1"
+     transform="matrix(0.72 0 0 0.72 0 0)"
+     fill="none" />
+  <g
+     id="group2"
+     transform="matrix(0.72 0 0 0.72 0 0)"
+     fill="none" />
+  <g
+     id="group3"
+     transform="matrix(0.72 0 0 0.72 0 0)"
+     fill="none" />
+  <g
+     id="group4"
+     transform="matrix(0.72 0 0 0.72 0 0)"
+     fill="none" />
+  <g
+     id="group5"
+     transform="matrix(0.72 0 0 0.72 0 0)"
+     fill="none" />
+</svg>

@@ -1,0 +1,922 @@
+ReferenceError: req is not defined
+    at Object.<anonymous> (/home/balls/sites/fennec/routes/files.js:17:16)
+    at Module._compile (node:internal/modules/cjs/loader:1256:14)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1310:10)
+    at Module.load (node:internal/modules/cjs/loader:1119:32)
+    at Module._load (node:internal/modules/cjs/loader:960:12)
+    at Module.require (node:internal/modules/cjs/loader:1143:19)
+    at Hook._require.Module.require (/home/balls/.nvm/versions/node/v18.16.1/lib/node_modules/pm2/node_modules/require-in-the-middle/index.js:101:39)
+    at require (node:internal/modules/cjs/helpers:110:18)
+    at Object.<anonymous> (/home/balls/sites/fennec/app.js:12:19)
+    at Module._compile (node:internal/modules/cjs/loader:1256:14)
+ReferenceError: req is not defined
+    at Object.<anonymous> (/home/balls/sites/fennec/routes/files.js:17:16)
+    at Module._compile (node:internal/modules/cjs/loader:1256:14)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1310:10)
+    at Module.load (node:internal/modules/cjs/loader:1119:32)
+    at Module._load (node:internal/modules/cjs/loader:960:12)
+    at Module.require (node:internal/modules/cjs/loader:1143:19)
+    at Hook._require.Module.require (/home/balls/.nvm/versions/node/v18.16.1/lib/node_modules/pm2/node_modules/require-in-the-middle/index.js:101:39)
+    at require (node:internal/modules/cjs/helpers:110:18)
+    at Object.<anonymous> (/home/balls/sites/fennec/app.js:12:19)
+    at Module._compile (node:internal/modules/cjs/loader:1256:14)
+ReferenceError: req is not defined
+    at Object.<anonymous> (/home/balls/sites/fennec/routes/files.js:17:16)
+    at Module._compile (node:internal/modules/cjs/loader:1256:14)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1310:10)
+    at Module.load (node:internal/modules/cjs/loader:1119:32)
+    at Module._load (node:internal/modules/cjs/loader:960:12)
+    at Module.require (node:internal/modules/cjs/loader:1143:19)
+    at Hook._require.Module.require (/home/balls/.nvm/versions/node/v18.16.1/lib/node_modules/pm2/node_modules/require-in-the-middle/index.js:101:39)
+    at require (node:internal/modules/cjs/helpers:110:18)
+    at Object.<anonymous> (/home/balls/sites/fennec/app.js:12:19)
+    at Module._compile (node:internal/modules/cjs/loader:1256:14)
+ReferenceError: req is not defined
+    at Object.<anonymous> (/home/balls/sites/fennec/routes/files.js:17:16)
+    at Module._compile (node:internal/modules/cjs/loader:1256:14)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1310:10)
+    at Module.load (node:internal/modules/cjs/loader:1119:32)
+    at Module._load (node:internal/modules/cjs/loader:960:12)
+    at Module.require (node:internal/modules/cjs/loader:1143:19)
+    at Hook._require.Module.require (/home/balls/.nvm/versions/node/v18.16.1/lib/node_modules/pm2/node_modules/require-in-the-middle/index.js:101:39)
+    at require (node:internal/modules/cjs/helpers:110:18)
+    at Object.<anonymous> (/home/balls/sites/fennec/app.js:12:19)
+    at Module._compile (node:internal/modules/cjs/loader:1256:14)
+ReferenceError: req is not defined
+    at Object.<anonymous> (/home/balls/sites/fennec/routes/files.js:17:16)
+    at Module._compile (node:internal/modules/cjs/loader:1256:14)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1310:10)
+    at Module.load (node:internal/modules/cjs/loader:1119:32)
+    at Module._load (node:internal/modules/cjs/loader:960:12)
+    at Module.require (node:internal/modules/cjs/loader:1143:19)
+    at Hook._require.Module.require (/home/balls/.nvm/versions/node/v18.16.1/lib/node_modules/pm2/node_modules/require-in-the-middle/index.js:101:39)
+    at require (node:internal/modules/cjs/helpers:110:18)
+    at Object.<anonymous> (/home/balls/sites/fennec/app.js:12:19)
+    at Module._compile (node:internal/modules/cjs/loader:1256:14)
+ReferenceError: req is not defined
+    at Object.<anonymous> (/home/balls/sites/fennec/routes/files.js:17:16)
+    at Module._compile (node:internal/modules/cjs/loader:1256:14)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1310:10)
+    at Module.load (node:internal/modules/cjs/loader:1119:32)
+    at Module._load (node:internal/modules/cjs/loader:960:12)
+    at Module.require (node:internal/modules/cjs/loader:1143:19)
+    at Hook._require.Module.require (/home/balls/.nvm/versions/node/v18.16.1/lib/node_modules/pm2/node_modules/require-in-the-middle/index.js:101:39)
+    at require (node:internal/modules/cjs/helpers:110:18)
+    at Object.<anonymous> (/home/balls/sites/fennec/app.js:12:19)
+    at Module._compile (node:internal/modules/cjs/loader:1256:14)
+ReferenceError: req is not defined
+    at Object.<anonymous> (/home/balls/sites/fennec/routes/files.js:17:16)
+    at Module._compile (node:internal/modules/cjs/loader:1256:14)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1310:10)
+    at Module.load (node:internal/modules/cjs/loader:1119:32)
+    at Module._load (node:internal/modules/cjs/loader:960:12)
+    at Module.require (node:internal/modules/cjs/loader:1143:19)
+    at Hook._require.Module.require (/home/balls/.nvm/versions/node/v18.16.1/lib/node_modules/pm2/node_modules/require-in-the-middle/index.js:101:39)
+    at require (node:internal/modules/cjs/helpers:110:18)
+    at Object.<anonymous> (/home/balls/sites/fennec/app.js:12:19)
+    at Module._compile (node:internal/modules/cjs/loader:1256:14)
+ReferenceError: req is not defined
+    at Object.<anonymous> (/home/balls/sites/fennec/routes/files.js:17:16)
+    at Module._compile (node:internal/modules/cjs/loader:1256:14)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1310:10)
+    at Module.load (node:internal/modules/cjs/loader:1119:32)
+    at Module._load (node:internal/modules/cjs/loader:960:12)
+    at Module.require (node:internal/modules/cjs/loader:1143:19)
+    at Hook._require.Module.require (/home/balls/.nvm/versions/node/v18.16.1/lib/node_modules/pm2/node_modules/require-in-the-middle/index.js:101:39)
+    at require (node:internal/modules/cjs/helpers:110:18)
+    at Object.<anonymous> (/home/balls/sites/fennec/app.js:12:19)
+    at Module._compile (node:internal/modules/cjs/loader:1256:14)
+ReferenceError: req is not defined
+    at Object.<anonymous> (/home/balls/sites/fennec/routes/files.js:17:16)
+    at Module._compile (node:internal/modules/cjs/loader:1256:14)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1310:10)
+    at Module.load (node:internal/modules/cjs/loader:1119:32)
+    at Module._load (node:internal/modules/cjs/loader:960:12)
+    at Module.require (node:internal/modules/cjs/loader:1143:19)
+    at Hook._require.Module.require (/home/balls/.nvm/versions/node/v18.16.1/lib/node_modules/pm2/node_modules/require-in-the-middle/index.js:101:39)
+    at require (node:internal/modules/cjs/helpers:110:18)
+    at Object.<anonymous> (/home/balls/sites/fennec/app.js:12:19)
+    at Module._compile (node:internal/modules/cjs/loader:1256:14)
+ReferenceError: req is not defined
+    at Object.<anonymous> (/home/balls/sites/fennec/routes/files.js:17:16)
+    at Module._compile (node:internal/modules/cjs/loader:1256:14)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1310:10)
+    at Module.load (node:internal/modules/cjs/loader:1119:32)
+    at Module._load (node:internal/modules/cjs/loader:960:12)
+    at Module.require (node:internal/modules/cjs/loader:1143:19)
+    at Hook._require.Module.require (/home/balls/.nvm/versions/node/v18.16.1/lib/node_modules/pm2/node_modules/require-in-the-middle/index.js:101:39)
+    at require (node:internal/modules/cjs/helpers:110:18)
+    at Object.<anonymous> (/home/balls/sites/fennec/app.js:12:19)
+    at Module._compile (node:internal/modules/cjs/loader:1256:14)
+ReferenceError: req is not defined
+    at Object.<anonymous> (/home/balls/sites/fennec/routes/files.js:17:16)
+    at Module._compile (node:internal/modules/cjs/loader:1256:14)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1310:10)
+    at Module.load (node:internal/modules/cjs/loader:1119:32)
+    at Module._load (node:internal/modules/cjs/loader:960:12)
+    at Module.require (node:internal/modules/cjs/loader:1143:19)
+    at Hook._require.Module.require (/home/balls/.nvm/versions/node/v18.16.1/lib/node_modules/pm2/node_modules/require-in-the-middle/index.js:101:39)
+    at require (node:internal/modules/cjs/helpers:110:18)
+    at Object.<anonymous> (/home/balls/sites/fennec/app.js:12:19)
+    at Module._compile (node:internal/modules/cjs/loader:1256:14)
+ReferenceError: req is not defined
+    at Object.<anonymous> (/home/balls/sites/fennec/routes/files.js:17:16)
+    at Module._compile (node:internal/modules/cjs/loader:1256:14)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1310:10)
+    at Module.load (node:internal/modules/cjs/loader:1119:32)
+    at Module._load (node:internal/modules/cjs/loader:960:12)
+    at Module.require (node:internal/modules/cjs/loader:1143:19)
+    at Hook._require.Module.require (/home/balls/.nvm/versions/node/v18.16.1/lib/node_modules/pm2/node_modules/require-in-the-middle/index.js:101:39)
+    at require (node:internal/modules/cjs/helpers:110:18)
+    at Object.<anonymous> (/home/balls/sites/fennec/app.js:12:19)
+    at Module._compile (node:internal/modules/cjs/loader:1256:14)
+ReferenceError: req is not defined
+    at Object.<anonymous> (/home/balls/sites/fennec/routes/files.js:17:16)
+    at Module._compile (node:internal/modules/cjs/loader:1256:14)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1310:10)
+    at Module.load (node:internal/modules/cjs/loader:1119:32)
+    at Module._load (node:internal/modules/cjs/loader:960:12)
+    at Module.require (node:internal/modules/cjs/loader:1143:19)
+    at Hook._require.Module.require (/home/balls/.nvm/versions/node/v18.16.1/lib/node_modules/pm2/node_modules/require-in-the-middle/index.js:101:39)
+    at require (node:internal/modules/cjs/helpers:110:18)
+    at Object.<anonymous> (/home/balls/sites/fennec/app.js:12:19)
+    at Module._compile (node:internal/modules/cjs/loader:1256:14)
+ReferenceError: req is not defined
+    at Object.<anonymous> (/home/balls/sites/fennec/routes/files.js:17:16)
+    at Module._compile (node:internal/modules/cjs/loader:1256:14)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1310:10)
+    at Module.load (node:internal/modules/cjs/loader:1119:32)
+    at Module._load (node:internal/modules/cjs/loader:960:12)
+    at Module.require (node:internal/modules/cjs/loader:1143:19)
+    at Hook._require.Module.require (/home/balls/.nvm/versions/node/v18.16.1/lib/node_modules/pm2/node_modules/require-in-the-middle/index.js:101:39)
+    at require (node:internal/modules/cjs/helpers:110:18)
+    at Object.<anonymous> (/home/balls/sites/fennec/app.js:12:19)
+    at Module._compile (node:internal/modules/cjs/loader:1256:14)
+ReferenceError: req is not defined
+    at Object.<anonymous> (/home/balls/sites/fennec/routes/files.js:17:16)
+    at Module._compile (node:internal/modules/cjs/loader:1256:14)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1310:10)
+    at Module.load (node:internal/modules/cjs/loader:1119:32)
+    at Module._load (node:internal/modules/cjs/loader:960:12)
+    at Module.require (node:internal/modules/cjs/loader:1143:19)
+    at Hook._require.Module.require (/home/balls/.nvm/versions/node/v18.16.1/lib/node_modules/pm2/node_modules/require-in-the-middle/index.js:101:39)
+    at require (node:internal/modules/cjs/helpers:110:18)
+    at Object.<anonymous> (/home/balls/sites/fennec/app.js:12:19)
+    at Module._compile (node:internal/modules/cjs/loader:1256:14)
+ReferenceError: req is not defined
+    at Object.<anonymous> (/home/balls/sites/fennec/routes/files.js:17:16)
+    at Module._compile (node:internal/modules/cjs/loader:1256:14)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1310:10)
+    at Module.load (node:internal/modules/cjs/loader:1119:32)
+    at Module._load (node:internal/modules/cjs/loader:960:12)
+    at Module.require (node:internal/modules/cjs/loader:1143:19)
+    at Hook._require.Module.require (/home/balls/.nvm/versions/node/v18.16.1/lib/node_modules/pm2/node_modules/require-in-the-middle/index.js:101:39)
+    at require (node:internal/modules/cjs/helpers:110:18)
+    at Object.<anonymous> (/home/balls/sites/fennec/app.js:12:19)
+    at Module._compile (node:internal/modules/cjs/loader:1256:14)
+TypeError: Cannot read properties of undefined (reading 'filepath')
+    at /home/balls/sites/fennec/routes/files.js:20:44
+    at zalgoSafe (/home/balls/sites/fennec/node_modules/dezalgo/dezalgo.js:20:10)
+    at f (/home/balls/sites/fennec/node_modules/once/once.js:25:25)
+    at IncomingForm.<anonymous> (/home/balls/sites/fennec/node_modules/formidable/dist/index.cjs:1210:7)
+    at IncomingForm.emit (node:events:513:28)
+    at IncomingForm._maybeEnd (/home/balls/sites/fennec/node_modules/formidable/dist/index.cjs:1661:10)
+    at /home/balls/sites/fennec/node_modules/formidable/dist/index.cjs:1420:14
+    at Array.<anonymous> (/home/balls/sites/fennec/node_modules/formidable/dist/index.cjs:88:7)
+    at finish (node:internal/streams/writable:745:25)
+    at finishMaybe (node:internal/streams/writable:733:9)
+TypeError: Cannot read properties of undefined (reading 'filepath')
+    at /home/balls/sites/fennec/routes/files.js:20:44
+    at zalgoSafe (/home/balls/sites/fennec/node_modules/dezalgo/dezalgo.js:20:10)
+    at f (/home/balls/sites/fennec/node_modules/once/once.js:25:25)
+    at IncomingForm.<anonymous> (/home/balls/sites/fennec/node_modules/formidable/dist/index.cjs:1210:7)
+    at IncomingForm.emit (node:events:513:28)
+    at IncomingForm._maybeEnd (/home/balls/sites/fennec/node_modules/formidable/dist/index.cjs:1661:10)
+    at /home/balls/sites/fennec/node_modules/formidable/dist/index.cjs:1420:14
+    at Array.<anonymous> (/home/balls/sites/fennec/node_modules/formidable/dist/index.cjs:88:7)
+    at finish (node:internal/streams/writable:745:25)
+    at finishMaybe (node:internal/streams/writable:733:9)
+TypeError: Cannot read properties of undefined (reading 'filepath')
+    at /home/balls/sites/fennec/routes/files.js:20:44
+    at zalgoSafe (/home/balls/sites/fennec/node_modules/dezalgo/dezalgo.js:20:10)
+    at f (/home/balls/sites/fennec/node_modules/once/once.js:25:25)
+    at IncomingForm.<anonymous> (/home/balls/sites/fennec/node_modules/formidable/dist/index.cjs:1210:7)
+    at IncomingForm.emit (node:events:513:28)
+    at IncomingForm._maybeEnd (/home/balls/sites/fennec/node_modules/formidable/dist/index.cjs:1661:10)
+    at /home/balls/sites/fennec/node_modules/formidable/dist/index.cjs:1420:14
+    at Array.<anonymous> (/home/balls/sites/fennec/node_modules/formidable/dist/index.cjs:88:7)
+    at finish (node:internal/streams/writable:745:25)
+    at finishMaybe (node:internal/streams/writable:733:9)
+TypeError [ERR_INVALID_ARG_TYPE]: The "path" argument must be of type string or an instance of Buffer or URL. Received undefined
+    at Object.openSync (node:fs:593:10)
+    at Object.readFileSync (node:fs:469:35)
+    at /home/balls/sites/fennec/routes/files.js:23:30
+    at zalgoSafe (/home/balls/sites/fennec/node_modules/dezalgo/dezalgo.js:20:10)
+    at f (/home/balls/sites/fennec/node_modules/once/once.js:25:25)
+    at IncomingForm.<anonymous> (/home/balls/sites/fennec/node_modules/formidable/dist/index.cjs:1210:7)
+    at IncomingForm.emit (node:events:513:28)
+    at IncomingForm._maybeEnd (/home/balls/sites/fennec/node_modules/formidable/dist/index.cjs:1661:10)
+    at /home/balls/sites/fennec/node_modules/formidable/dist/index.cjs:1420:14
+    at Array.<anonymous> (/home/balls/sites/fennec/node_modules/formidable/dist/index.cjs:88:7) {
+  code: 'ERR_INVALID_ARG_TYPE'
+}
+TypeError [ERR_INVALID_ARG_TYPE]: The "path" argument must be of type string or an instance of Buffer or URL. Received undefined
+    at Object.openSync (node:fs:593:10)
+    at Object.readFileSync (node:fs:469:35)
+    at /home/balls/sites/fennec/routes/files.js:23:30
+    at zalgoSafe (/home/balls/sites/fennec/node_modules/dezalgo/dezalgo.js:20:10)
+    at f (/home/balls/sites/fennec/node_modules/once/once.js:25:25)
+    at IncomingForm.<anonymous> (/home/balls/sites/fennec/node_modules/formidable/dist/index.cjs:1210:7)
+    at IncomingForm.emit (node:events:513:28)
+    at IncomingForm._maybeEnd (/home/balls/sites/fennec/node_modules/formidable/dist/index.cjs:1661:10)
+    at /home/balls/sites/fennec/node_modules/formidable/dist/index.cjs:1420:14
+    at Array.<anonymous> (/home/balls/sites/fennec/node_modules/formidable/dist/index.cjs:88:7) {
+  code: 'ERR_INVALID_ARG_TYPE'
+}
+TypeError [ERR_INVALID_ARG_TYPE]: The "path" argument must be of type string or an instance of Buffer or URL. Received undefined
+    at Object.openSync (node:fs:593:10)
+    at Object.readFileSync (node:fs:469:35)
+    at /home/balls/sites/fennec/routes/files.js:23:30
+    at zalgoSafe (/home/balls/sites/fennec/node_modules/dezalgo/dezalgo.js:20:10)
+    at f (/home/balls/sites/fennec/node_modules/once/once.js:25:25)
+    at IncomingForm.<anonymous> (/home/balls/sites/fennec/node_modules/formidable/dist/index.cjs:1210:7)
+    at IncomingForm.emit (node:events:513:28)
+    at IncomingForm._maybeEnd (/home/balls/sites/fennec/node_modules/formidable/dist/index.cjs:1661:10)
+    at /home/balls/sites/fennec/node_modules/formidable/dist/index.cjs:1420:14
+    at Array.<anonymous> (/home/balls/sites/fennec/node_modules/formidable/dist/index.cjs:88:7) {
+  code: 'ERR_INVALID_ARG_TYPE'
+}
+TypeError [ERR_INVALID_ARG_TYPE]: The "path" argument must be of type string or an instance of Buffer or URL. Received undefined
+    at Object.openSync (node:fs:593:10)
+    at Object.readFileSync (node:fs:469:35)
+    at /home/balls/sites/fennec/routes/files.js:28:30
+    at zalgoSafe (/home/balls/sites/fennec/node_modules/dezalgo/dezalgo.js:20:10)
+    at f (/home/balls/sites/fennec/node_modules/once/once.js:25:25)
+    at IncomingForm.<anonymous> (/home/balls/sites/fennec/node_modules/formidable/dist/index.cjs:1210:7)
+    at IncomingForm.emit (node:events:513:28)
+    at IncomingForm._maybeEnd (/home/balls/sites/fennec/node_modules/formidable/dist/index.cjs:1661:10)
+    at /home/balls/sites/fennec/node_modules/formidable/dist/index.cjs:1420:14
+    at Array.<anonymous> (/home/balls/sites/fennec/node_modules/formidable/dist/index.cjs:88:7) {
+  code: 'ERR_INVALID_ARG_TYPE'
+}
+TypeError [ERR_INVALID_ARG_TYPE]: The "path" argument must be of type string or an instance of Buffer or URL. Received undefined
+    at Object.openSync (node:fs:593:10)
+    at Object.readFileSync (node:fs:469:35)
+    at /home/balls/sites/fennec/routes/files.js:28:30
+    at zalgoSafe (/home/balls/sites/fennec/node_modules/dezalgo/dezalgo.js:20:10)
+    at f (/home/balls/sites/fennec/node_modules/once/once.js:25:25)
+    at IncomingForm.<anonymous> (/home/balls/sites/fennec/node_modules/formidable/dist/index.cjs:1210:7)
+    at IncomingForm.emit (node:events:513:28)
+    at IncomingForm._maybeEnd (/home/balls/sites/fennec/node_modules/formidable/dist/index.cjs:1661:10)
+    at /home/balls/sites/fennec/node_modules/formidable/dist/index.cjs:1420:14
+    at Array.<anonymous> (/home/balls/sites/fennec/node_modules/formidable/dist/index.cjs:88:7) {
+  code: 'ERR_INVALID_ARG_TYPE'
+}
+TypeError [ERR_INVALID_ARG_TYPE]: The "path" argument must be of type string or an instance of Buffer or URL. Received undefined
+    at Object.openSync (node:fs:593:10)
+    at Object.readFileSync (node:fs:469:35)
+    at /home/balls/sites/fennec/routes/files.js:28:30
+    at zalgoSafe (/home/balls/sites/fennec/node_modules/dezalgo/dezalgo.js:20:10)
+    at f (/home/balls/sites/fennec/node_modules/once/once.js:25:25)
+    at IncomingForm.<anonymous> (/home/balls/sites/fennec/node_modules/formidable/dist/index.cjs:1210:7)
+    at IncomingForm.emit (node:events:513:28)
+    at IncomingForm._maybeEnd (/home/balls/sites/fennec/node_modules/formidable/dist/index.cjs:1661:10)
+    at /home/balls/sites/fennec/node_modules/formidable/dist/index.cjs:1420:14
+    at Array.<anonymous> (/home/balls/sites/fennec/node_modules/formidable/dist/index.cjs:88:7) {
+  code: 'ERR_INVALID_ARG_TYPE'
+}
+TypeError [ERR_INVALID_ARG_TYPE]: The "path" argument must be of type string or an instance of Buffer or URL. Received undefined
+    at Object.openSync (node:fs:593:10)
+    at Object.readFileSync (node:fs:469:35)
+    at /home/balls/sites/fennec/routes/files.js:28:30
+    at zalgoSafe (/home/balls/sites/fennec/node_modules/dezalgo/dezalgo.js:20:10)
+    at f (/home/balls/sites/fennec/node_modules/once/once.js:25:25)
+    at IncomingForm.<anonymous> (/home/balls/sites/fennec/node_modules/formidable/dist/index.cjs:1210:7)
+    at IncomingForm.emit (node:events:513:28)
+    at IncomingForm._maybeEnd (/home/balls/sites/fennec/node_modules/formidable/dist/index.cjs:1661:10)
+    at /home/balls/sites/fennec/node_modules/formidable/dist/index.cjs:1420:14
+    at Array.<anonymous> (/home/balls/sites/fennec/node_modules/formidable/dist/index.cjs:88:7) {
+  code: 'ERR_INVALID_ARG_TYPE'
+}
+TypeError [ERR_INVALID_ARG_TYPE]: The "path" argument must be of type string or an instance of Buffer or URL. Received undefined
+    at Object.openSync (node:fs:593:10)
+    at Object.readFileSync (node:fs:469:35)
+    at /home/balls/sites/fennec/routes/files.js:28:30
+    at zalgoSafe (/home/balls/sites/fennec/node_modules/dezalgo/dezalgo.js:20:10)
+    at f (/home/balls/sites/fennec/node_modules/once/once.js:25:25)
+    at IncomingForm.<anonymous> (/home/balls/sites/fennec/node_modules/formidable/dist/index.cjs:1210:7)
+    at IncomingForm.emit (node:events:513:28)
+    at IncomingForm._maybeEnd (/home/balls/sites/fennec/node_modules/formidable/dist/index.cjs:1661:10)
+    at /home/balls/sites/fennec/node_modules/formidable/dist/index.cjs:1420:14
+    at Array.<anonymous> (/home/balls/sites/fennec/node_modules/formidable/dist/index.cjs:88:7) {
+  code: 'ERR_INVALID_ARG_TYPE'
+}
+TypeError [ERR_INVALID_ARG_TYPE]: The "path" argument must be of type string or an instance of Buffer or URL. Received undefined
+    at Object.openSync (node:fs:593:10)
+    at Object.readFileSync (node:fs:469:35)
+    at /home/balls/sites/fennec/routes/files.js:28:30
+    at zalgoSafe (/home/balls/sites/fennec/node_modules/dezalgo/dezalgo.js:20:10)
+    at f (/home/balls/sites/fennec/node_modules/once/once.js:25:25)
+    at IncomingForm.<anonymous> (/home/balls/sites/fennec/node_modules/formidable/dist/index.cjs:1210:7)
+    at IncomingForm.emit (node:events:513:28)
+    at IncomingForm._maybeEnd (/home/balls/sites/fennec/node_modules/formidable/dist/index.cjs:1661:10)
+    at /home/balls/sites/fennec/node_modules/formidable/dist/index.cjs:1420:14
+    at Array.<anonymous> (/home/balls/sites/fennec/node_modules/formidable/dist/index.cjs:88:7) {
+  code: 'ERR_INVALID_ARG_TYPE'
+}
+TypeError [ERR_INVALID_ARG_TYPE]: The "path" argument must be of type string or an instance of Buffer or URL. Received undefined
+    at Object.openSync (node:fs:593:10)
+    at Object.readFileSync (node:fs:469:35)
+    at /home/balls/sites/fennec/routes/files.js:28:30
+    at zalgoSafe (/home/balls/sites/fennec/node_modules/dezalgo/dezalgo.js:20:10)
+    at f (/home/balls/sites/fennec/node_modules/once/once.js:25:25)
+    at IncomingForm.<anonymous> (/home/balls/sites/fennec/node_modules/formidable/dist/index.cjs:1210:7)
+    at IncomingForm.emit (node:events:513:28)
+    at IncomingForm._maybeEnd (/home/balls/sites/fennec/node_modules/formidable/dist/index.cjs:1661:10)
+    at /home/balls/sites/fennec/node_modules/formidable/dist/index.cjs:1420:14
+    at Array.<anonymous> (/home/balls/sites/fennec/node_modules/formidable/dist/index.cjs:88:7) {
+  code: 'ERR_INVALID_ARG_TYPE'
+}
+TypeError [ERR_INVALID_ARG_TYPE]: The "path" argument must be of type string or an instance of Buffer or URL. Received undefined
+    at Object.openSync (node:fs:593:10)
+    at Object.readFileSync (node:fs:469:35)
+    at /home/balls/sites/fennec/routes/files.js:28:30
+    at zalgoSafe (/home/balls/sites/fennec/node_modules/dezalgo/dezalgo.js:20:10)
+    at f (/home/balls/sites/fennec/node_modules/once/once.js:25:25)
+    at IncomingForm.<anonymous> (/home/balls/sites/fennec/node_modules/formidable/dist/index.cjs:1210:7)
+    at IncomingForm.emit (node:events:513:28)
+    at IncomingForm._maybeEnd (/home/balls/sites/fennec/node_modules/formidable/dist/index.cjs:1661:10)
+    at /home/balls/sites/fennec/node_modules/formidable/dist/index.cjs:1420:14
+    at Array.<anonymous> (/home/balls/sites/fennec/node_modules/formidable/dist/index.cjs:88:7) {
+  code: 'ERR_INVALID_ARG_TYPE'
+}
+TypeError [ERR_INVALID_ARG_TYPE]: The "path" argument must be of type string or an instance of Buffer or URL. Received undefined
+    at Object.openSync (node:fs:593:10)
+    at Object.readFileSync (node:fs:469:35)
+    at /home/balls/sites/fennec/routes/files.js:28:30
+    at zalgoSafe (/home/balls/sites/fennec/node_modules/dezalgo/dezalgo.js:20:10)
+    at f (/home/balls/sites/fennec/node_modules/once/once.js:25:25)
+    at IncomingForm.<anonymous> (/home/balls/sites/fennec/node_modules/formidable/dist/index.cjs:1210:7)
+    at IncomingForm.emit (node:events:513:28)
+    at IncomingForm._maybeEnd (/home/balls/sites/fennec/node_modules/formidable/dist/index.cjs:1661:10)
+    at /home/balls/sites/fennec/node_modules/formidable/dist/index.cjs:1420:14
+    at Array.<anonymous> (/home/balls/sites/fennec/node_modules/formidable/dist/index.cjs:88:7) {
+  code: 'ERR_INVALID_ARG_TYPE'
+}
+TypeError [ERR_INVALID_ARG_TYPE]: The "path" argument must be of type string or an instance of Buffer or URL. Received undefined
+    at Object.openSync (node:fs:593:10)
+    at Object.readFileSync (node:fs:469:35)
+    at /home/balls/sites/fennec/routes/files.js:28:30
+    at zalgoSafe (/home/balls/sites/fennec/node_modules/dezalgo/dezalgo.js:20:10)
+    at f (/home/balls/sites/fennec/node_modules/once/once.js:25:25)
+    at IncomingForm.<anonymous> (/home/balls/sites/fennec/node_modules/formidable/dist/index.cjs:1210:7)
+    at IncomingForm.emit (node:events:513:28)
+    at IncomingForm._maybeEnd (/home/balls/sites/fennec/node_modules/formidable/dist/index.cjs:1661:10)
+    at /home/balls/sites/fennec/node_modules/formidable/dist/index.cjs:1420:14
+    at Array.<anonymous> (/home/balls/sites/fennec/node_modules/formidable/dist/index.cjs:88:7) {
+  code: 'ERR_INVALID_ARG_TYPE'
+}
+Error: listen EADDRINUSE: address already in use :::80
+    at Server.setupListenHandle [as _listen2] (node:net:1740:16)
+    at listenInCluster (node:net:1788:12)
+    at Server.listen (node:net:1876:7)
+    at Function.listen (/home/balls/sites/fennec/node_modules/express/lib/application.js:635:24)
+    at Object.<anonymous> (/home/balls/sites/fennec/app.js:14:18)
+    at Module._compile (node:internal/modules/cjs/loader:1256:14)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1310:10)
+    at Module.load (node:internal/modules/cjs/loader:1119:32)
+    at Module._load (node:internal/modules/cjs/loader:960:12)
+    at Object.<anonymous> (/home/balls/.nvm/versions/node/v18.16.1/lib/node_modules/pm2/lib/ProcessContainerFork.js:33:23) {
+  code: 'EADDRINUSE',
+  errno: -98,
+  syscall: 'listen',
+  address: '::',
+  port: 80
+}
+Error: listen EADDRINUSE: address already in use :::80
+    at Server.setupListenHandle [as _listen2] (node:net:1740:16)
+    at listenInCluster (node:net:1788:12)
+    at Server.listen (node:net:1876:7)
+    at Function.listen (/home/balls/sites/fennec/node_modules/express/lib/application.js:635:24)
+    at Object.<anonymous> (/home/balls/sites/fennec/app.js:14:18)
+    at Module._compile (node:internal/modules/cjs/loader:1256:14)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1310:10)
+    at Module.load (node:internal/modules/cjs/loader:1119:32)
+    at Module._load (node:internal/modules/cjs/loader:960:12)
+    at Object.<anonymous> (/home/balls/.nvm/versions/node/v18.16.1/lib/node_modules/pm2/lib/ProcessContainerFork.js:33:23) {
+  code: 'EADDRINUSE',
+  errno: -98,
+  syscall: 'listen',
+  address: '::',
+  port: 80
+}
+Error: listen EADDRINUSE: address already in use :::80
+    at Server.setupListenHandle [as _listen2] (node:net:1740:16)
+    at listenInCluster (node:net:1788:12)
+    at Server.listen (node:net:1876:7)
+    at Function.listen (/home/balls/sites/fennec/node_modules/express/lib/application.js:635:24)
+    at Object.<anonymous> (/home/balls/sites/fennec/app.js:14:18)
+    at Module._compile (node:internal/modules/cjs/loader:1256:14)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1310:10)
+    at Module.load (node:internal/modules/cjs/loader:1119:32)
+    at Module._load (node:internal/modules/cjs/loader:960:12)
+    at Object.<anonymous> (/home/balls/.nvm/versions/node/v18.16.1/lib/node_modules/pm2/lib/ProcessContainerFork.js:33:23) {
+  code: 'EADDRINUSE',
+  errno: -98,
+  syscall: 'listen',
+  address: '::',
+  port: 80
+}
+Error: listen EADDRINUSE: address already in use :::80
+    at Server.setupListenHandle [as _listen2] (node:net:1740:16)
+    at listenInCluster (node:net:1788:12)
+    at Server.listen (node:net:1876:7)
+    at Function.listen (/home/balls/sites/fennec/node_modules/express/lib/application.js:635:24)
+    at Object.<anonymous> (/home/balls/sites/fennec/app.js:14:18)
+    at Module._compile (node:internal/modules/cjs/loader:1256:14)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1310:10)
+    at Module.load (node:internal/modules/cjs/loader:1119:32)
+    at Module._load (node:internal/modules/cjs/loader:960:12)
+    at Object.<anonymous> (/home/balls/.nvm/versions/node/v18.16.1/lib/node_modules/pm2/lib/ProcessContainerFork.js:33:23) {
+  code: 'EADDRINUSE',
+  errno: -98,
+  syscall: 'listen',
+  address: '::',
+  port: 80
+}
+Error: listen EADDRINUSE: address already in use :::80
+    at Server.setupListenHandle [as _listen2] (node:net:1740:16)
+    at listenInCluster (node:net:1788:12)
+    at Server.listen (node:net:1876:7)
+    at Function.listen (/home/balls/sites/fennec/node_modules/express/lib/application.js:635:24)
+    at Object.<anonymous> (/home/balls/sites/fennec/app.js:14:18)
+    at Module._compile (node:internal/modules/cjs/loader:1256:14)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1310:10)
+    at Module.load (node:internal/modules/cjs/loader:1119:32)
+    at Module._load (node:internal/modules/cjs/loader:960:12)
+    at Object.<anonymous> (/home/balls/.nvm/versions/node/v18.16.1/lib/node_modules/pm2/lib/ProcessContainerFork.js:33:23) {
+  code: 'EADDRINUSE',
+  errno: -98,
+  syscall: 'listen',
+  address: '::',
+  port: 80
+}
+Error: listen EADDRINUSE: address already in use :::80
+    at Server.setupListenHandle [as _listen2] (node:net:1740:16)
+    at listenInCluster (node:net:1788:12)
+    at Server.listen (node:net:1876:7)
+    at Function.listen (/home/balls/sites/fennec/node_modules/express/lib/application.js:635:24)
+    at Object.<anonymous> (/home/balls/sites/fennec/app.js:14:18)
+    at Module._compile (node:internal/modules/cjs/loader:1256:14)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1310:10)
+    at Module.load (node:internal/modules/cjs/loader:1119:32)
+    at Module._load (node:internal/modules/cjs/loader:960:12)
+    at Object.<anonymous> (/home/balls/.nvm/versions/node/v18.16.1/lib/node_modules/pm2/lib/ProcessContainerFork.js:33:23) {
+  code: 'EADDRINUSE',
+  errno: -98,
+  syscall: 'listen',
+  address: '::',
+  port: 80
+}
+Error: listen EADDRINUSE: address already in use :::80
+    at Server.setupListenHandle [as _listen2] (node:net:1740:16)
+    at listenInCluster (node:net:1788:12)
+    at Server.listen (node:net:1876:7)
+    at Function.listen (/home/balls/sites/fennec/node_modules/express/lib/application.js:635:24)
+    at Object.<anonymous> (/home/balls/sites/fennec/app.js:14:18)
+    at Module._compile (node:internal/modules/cjs/loader:1256:14)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1310:10)
+    at Module.load (node:internal/modules/cjs/loader:1119:32)
+    at Module._load (node:internal/modules/cjs/loader:960:12)
+    at Object.<anonymous> (/home/balls/.nvm/versions/node/v18.16.1/lib/node_modules/pm2/lib/ProcessContainerFork.js:33:23) {
+  code: 'EADDRINUSE',
+  errno: -98,
+  syscall: 'listen',
+  address: '::',
+  port: 80
+}
+Error: listen EADDRINUSE: address already in use :::80
+    at Server.setupListenHandle [as _listen2] (node:net:1740:16)
+    at listenInCluster (node:net:1788:12)
+    at Server.listen (node:net:1876:7)
+    at Function.listen (/home/balls/sites/fennec/node_modules/express/lib/application.js:635:24)
+    at Object.<anonymous> (/home/balls/sites/fennec/app.js:14:18)
+    at Module._compile (node:internal/modules/cjs/loader:1256:14)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1310:10)
+    at Module.load (node:internal/modules/cjs/loader:1119:32)
+    at Module._load (node:internal/modules/cjs/loader:960:12)
+    at Object.<anonymous> (/home/balls/.nvm/versions/node/v18.16.1/lib/node_modules/pm2/lib/ProcessContainerFork.js:33:23) {
+  code: 'EADDRINUSE',
+  errno: -98,
+  syscall: 'listen',
+  address: '::',
+  port: 80
+}
+Error: listen EADDRINUSE: address already in use :::80
+    at Server.setupListenHandle [as _listen2] (node:net:1740:16)
+    at listenInCluster (node:net:1788:12)
+    at Server.listen (node:net:1876:7)
+    at Function.listen (/home/balls/sites/fennec/node_modules/express/lib/application.js:635:24)
+    at Object.<anonymous> (/home/balls/sites/fennec/app.js:14:18)
+    at Module._compile (node:internal/modules/cjs/loader:1256:14)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1310:10)
+    at Module.load (node:internal/modules/cjs/loader:1119:32)
+    at Module._load (node:internal/modules/cjs/loader:960:12)
+    at Object.<anonymous> (/home/balls/.nvm/versions/node/v18.16.1/lib/node_modules/pm2/lib/ProcessContainerFork.js:33:23) {
+  code: 'EADDRINUSE',
+  errno: -98,
+  syscall: 'listen',
+  address: '::',
+  port: 80
+}
+Error: listen EADDRINUSE: address already in use :::80
+    at Server.setupListenHandle [as _listen2] (node:net:1740:16)
+    at listenInCluster (node:net:1788:12)
+    at Server.listen (node:net:1876:7)
+    at Function.listen (/home/balls/sites/fennec/node_modules/express/lib/application.js:635:24)
+    at Object.<anonymous> (/home/balls/sites/fennec/app.js:14:18)
+    at Module._compile (node:internal/modules/cjs/loader:1256:14)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1310:10)
+    at Module.load (node:internal/modules/cjs/loader:1119:32)
+    at Module._load (node:internal/modules/cjs/loader:960:12)
+    at Object.<anonymous> (/home/balls/.nvm/versions/node/v18.16.1/lib/node_modules/pm2/lib/ProcessContainerFork.js:33:23) {
+  code: 'EADDRINUSE',
+  errno: -98,
+  syscall: 'listen',
+  address: '::',
+  port: 80
+}
+Error: listen EADDRINUSE: address already in use :::80
+    at Server.setupListenHandle [as _listen2] (node:net:1740:16)
+    at listenInCluster (node:net:1788:12)
+    at Server.listen (node:net:1876:7)
+    at Function.listen (/home/balls/sites/fennec/node_modules/express/lib/application.js:635:24)
+    at Object.<anonymous> (/home/balls/sites/fennec/app.js:14:18)
+    at Module._compile (node:internal/modules/cjs/loader:1256:14)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1310:10)
+    at Module.load (node:internal/modules/cjs/loader:1119:32)
+    at Module._load (node:internal/modules/cjs/loader:960:12)
+    at Object.<anonymous> (/home/balls/.nvm/versions/node/v18.16.1/lib/node_modules/pm2/lib/ProcessContainerFork.js:33:23) {
+  code: 'EADDRINUSE',
+  errno: -98,
+  syscall: 'listen',
+  address: '::',
+  port: 80
+}
+Error: listen EADDRINUSE: address already in use :::80
+    at Server.setupListenHandle [as _listen2] (node:net:1740:16)
+    at listenInCluster (node:net:1788:12)
+    at Server.listen (node:net:1876:7)
+    at Function.listen (/home/balls/sites/fennec/node_modules/express/lib/application.js:635:24)
+    at Object.<anonymous> (/home/balls/sites/fennec/app.js:14:18)
+    at Module._compile (node:internal/modules/cjs/loader:1256:14)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1310:10)
+    at Module.load (node:internal/modules/cjs/loader:1119:32)
+    at Module._load (node:internal/modules/cjs/loader:960:12)
+    at Object.<anonymous> (/home/balls/.nvm/versions/node/v18.16.1/lib/node_modules/pm2/lib/ProcessContainerFork.js:33:23) {
+  code: 'EADDRINUSE',
+  errno: -98,
+  syscall: 'listen',
+  address: '::',
+  port: 80
+}
+Error: listen EADDRINUSE: address already in use :::80
+    at Server.setupListenHandle [as _listen2] (node:net:1740:16)
+    at listenInCluster (node:net:1788:12)
+    at Server.listen (node:net:1876:7)
+    at Function.listen (/home/balls/sites/fennec/node_modules/express/lib/application.js:635:24)
+    at Object.<anonymous> (/home/balls/sites/fennec/app.js:14:18)
+    at Module._compile (node:internal/modules/cjs/loader:1256:14)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1310:10)
+    at Module.load (node:internal/modules/cjs/loader:1119:32)
+    at Module._load (node:internal/modules/cjs/loader:960:12)
+    at Object.<anonymous> (/home/balls/.nvm/versions/node/v18.16.1/lib/node_modules/pm2/lib/ProcessContainerFork.js:33:23) {
+  code: 'EADDRINUSE',
+  errno: -98,
+  syscall: 'listen',
+  address: '::',
+  port: 80
+}
+Error: listen EADDRINUSE: address already in use :::80
+    at Server.setupListenHandle [as _listen2] (node:net:1740:16)
+    at listenInCluster (node:net:1788:12)
+    at Server.listen (node:net:1876:7)
+    at Function.listen (/home/balls/sites/fennec/node_modules/express/lib/application.js:635:24)
+    at Object.<anonymous> (/home/balls/sites/fennec/app.js:14:18)
+    at Module._compile (node:internal/modules/cjs/loader:1256:14)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1310:10)
+    at Module.load (node:internal/modules/cjs/loader:1119:32)
+    at Module._load (node:internal/modules/cjs/loader:960:12)
+    at Object.<anonymous> (/home/balls/.nvm/versions/node/v18.16.1/lib/node_modules/pm2/lib/ProcessContainerFork.js:33:23) {
+  code: 'EADDRINUSE',
+  errno: -98,
+  syscall: 'listen',
+  address: '::',
+  port: 80
+}
+Error: listen EADDRINUSE: address already in use :::80
+    at Server.setupListenHandle [as _listen2] (node:net:1740:16)
+    at listenInCluster (node:net:1788:12)
+    at Server.listen (node:net:1876:7)
+    at Function.listen (/home/balls/sites/fennec/node_modules/express/lib/application.js:635:24)
+    at Object.<anonymous> (/home/balls/sites/fennec/app.js:14:18)
+    at Module._compile (node:internal/modules/cjs/loader:1256:14)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1310:10)
+    at Module.load (node:internal/modules/cjs/loader:1119:32)
+    at Module._load (node:internal/modules/cjs/loader:960:12)
+    at Object.<anonymous> (/home/balls/.nvm/versions/node/v18.16.1/lib/node_modules/pm2/lib/ProcessContainerFork.js:33:23) {
+  code: 'EADDRINUSE',
+  errno: -98,
+  syscall: 'listen',
+  address: '::',
+  port: 80
+}
+Error: listen EADDRINUSE: address already in use :::80
+    at Server.setupListenHandle [as _listen2] (node:net:1740:16)
+    at listenInCluster (node:net:1788:12)
+    at Server.listen (node:net:1876:7)
+    at Function.listen (/home/balls/sites/fennec/node_modules/express/lib/application.js:635:24)
+    at Object.<anonymous> (/home/balls/sites/fennec/app.js:14:18)
+    at Module._compile (node:internal/modules/cjs/loader:1256:14)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1310:10)
+    at Module.load (node:internal/modules/cjs/loader:1119:32)
+    at Module._load (node:internal/modules/cjs/loader:960:12)
+    at Object.<anonymous> (/home/balls/.nvm/versions/node/v18.16.1/lib/node_modules/pm2/lib/ProcessContainerFork.js:33:23) {
+  code: 'EADDRINUSE',
+  errno: -98,
+  syscall: 'listen',
+  address: '::',
+  port: 80
+}
+Error: listen EADDRINUSE: address already in use :::80
+    at Server.setupListenHandle [as _listen2] (node:net:1740:16)
+    at listenInCluster (node:net:1788:12)
+    at Server.listen (node:net:1876:7)
+    at Function.listen (/home/balls/sites/fennec/node_modules/express/lib/application.js:635:24)
+    at Object.<anonymous> (/home/balls/sites/fennec/app.js:14:18)
+    at Module._compile (node:internal/modules/cjs/loader:1256:14)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1310:10)
+    at Module.load (node:internal/modules/cjs/loader:1119:32)
+    at Module._load (node:internal/modules/cjs/loader:960:12)
+    at Object.<anonymous> (/home/balls/.nvm/versions/node/v18.16.1/lib/node_modules/pm2/lib/ProcessContainerFork.js:33:23) {
+  code: 'EADDRINUSE',
+  errno: -98,
+  syscall: 'listen',
+  address: '::',
+  port: 80
+}
+Error: listen EADDRINUSE: address already in use :::80
+    at Server.setupListenHandle [as _listen2] (node:net:1740:16)
+    at listenInCluster (node:net:1788:12)
+    at Server.listen (node:net:1876:7)
+    at Function.listen (/home/balls/sites/fennec/node_modules/express/lib/application.js:635:24)
+    at Object.<anonymous> (/home/balls/sites/fennec/app.js:14:18)
+    at Module._compile (node:internal/modules/cjs/loader:1256:14)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1310:10)
+    at Module.load (node:internal/modules/cjs/loader:1119:32)
+    at Module._load (node:internal/modules/cjs/loader:960:12)
+    at Object.<anonymous> (/home/balls/.nvm/versions/node/v18.16.1/lib/node_modules/pm2/lib/ProcessContainerFork.js:33:23) {
+  code: 'EADDRINUSE',
+  errno: -98,
+  syscall: 'listen',
+  address: '::',
+  port: 80
+}
+Error: listen EADDRINUSE: address already in use :::80
+    at Server.setupListenHandle [as _listen2] (node:net:1740:16)
+    at listenInCluster (node:net:1788:12)
+    at Server.listen (node:net:1876:7)
+    at Function.listen (/home/balls/sites/fennec/node_modules/express/lib/application.js:635:24)
+    at Object.<anonymous> (/home/balls/sites/fennec/app.js:14:18)
+    at Module._compile (node:internal/modules/cjs/loader:1256:14)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1310:10)
+    at Module.load (node:internal/modules/cjs/loader:1119:32)
+    at Module._load (node:internal/modules/cjs/loader:960:12)
+    at Object.<anonymous> (/home/balls/.nvm/versions/node/v18.16.1/lib/node_modules/pm2/lib/ProcessContainerFork.js:33:23) {
+  code: 'EADDRINUSE',
+  errno: -98,
+  syscall: 'listen',
+  address: '::',
+  port: 80
+}
+Error: listen EADDRINUSE: address already in use :::80
+    at Server.setupListenHandle [as _listen2] (node:net:1740:16)
+    at listenInCluster (node:net:1788:12)
+    at Server.listen (node:net:1876:7)
+    at Function.listen (/home/balls/sites/fennec/node_modules/express/lib/application.js:635:24)
+    at Object.<anonymous> (/home/balls/sites/fennec/app.js:14:18)
+    at Module._compile (node:internal/modules/cjs/loader:1256:14)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1310:10)
+    at Module.load (node:internal/modules/cjs/loader:1119:32)
+    at Module._load (node:internal/modules/cjs/loader:960:12)
+    at Object.<anonymous> (/home/balls/.nvm/versions/node/v18.16.1/lib/node_modules/pm2/lib/ProcessContainerFork.js:33:23) {
+  code: 'EADDRINUSE',
+  errno: -98,
+  syscall: 'listen',
+  address: '::',
+  port: 80
+}
+Error: listen EADDRINUSE: address already in use :::80
+    at Server.setupListenHandle [as _listen2] (node:net:1740:16)
+    at listenInCluster (node:net:1788:12)
+    at Server.listen (node:net:1876:7)
+    at Function.listen (/home/balls/sites/fennec/node_modules/express/lib/application.js:635:24)
+    at Object.<anonymous> (/home/balls/sites/fennec/app.js:14:18)
+    at Module._compile (node:internal/modules/cjs/loader:1256:14)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1310:10)
+    at Module.load (node:internal/modules/cjs/loader:1119:32)
+    at Module._load (node:internal/modules/cjs/loader:960:12)
+    at Object.<anonymous> (/home/balls/.nvm/versions/node/v18.16.1/lib/node_modules/pm2/lib/ProcessContainerFork.js:33:23) {
+  code: 'EADDRINUSE',
+  errno: -98,
+  syscall: 'listen',
+  address: '::',
+  port: 80
+}
+Error: listen EADDRINUSE: address already in use :::80
+    at Server.setupListenHandle [as _listen2] (node:net:1740:16)
+    at listenInCluster (node:net:1788:12)
+    at Server.listen (node:net:1876:7)
+    at Function.listen (/home/balls/sites/fennec/node_modules/express/lib/application.js:635:24)
+    at Object.<anonymous> (/home/balls/sites/fennec/app.js:14:18)
+    at Module._compile (node:internal/modules/cjs/loader:1256:14)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1310:10)
+    at Module.load (node:internal/modules/cjs/loader:1119:32)
+    at Module._load (node:internal/modules/cjs/loader:960:12)
+    at Object.<anonymous> (/home/balls/.nvm/versions/node/v18.16.1/lib/node_modules/pm2/lib/ProcessContainerFork.js:33:23) {
+  code: 'EADDRINUSE',
+  errno: -98,
+  syscall: 'listen',
+  address: '::',
+  port: 80
+}
+Error: listen EADDRINUSE: address already in use :::80
+    at Server.setupListenHandle [as _listen2] (node:net:1740:16)
+    at listenInCluster (node:net:1788:12)
+    at Server.listen (node:net:1876:7)
+    at Function.listen (/home/balls/sites/fennec/node_modules/express/lib/application.js:635:24)
+    at Object.<anonymous> (/home/balls/sites/fennec/app.js:14:18)
+    at Module._compile (node:internal/modules/cjs/loader:1256:14)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1310:10)
+    at Module.load (node:internal/modules/cjs/loader:1119:32)
+    at Module._load (node:internal/modules/cjs/loader:960:12)
+    at Object.<anonymous> (/home/balls/.nvm/versions/node/v18.16.1/lib/node_modules/pm2/lib/ProcessContainerFork.js:33:23) {
+  code: 'EADDRINUSE',
+  errno: -98,
+  syscall: 'listen',
+  address: '::',
+  port: 80
+}
+Error: listen EADDRINUSE: address already in use :::80
+    at Server.setupListenHandle [as _listen2] (node:net:1740:16)
+    at listenInCluster (node:net:1788:12)
+    at Server.listen (node:net:1876:7)
+    at Function.listen (/home/balls/sites/fennec/node_modules/express/lib/application.js:635:24)
+    at Object.<anonymous> (/home/balls/sites/fennec/app.js:14:18)
+    at Module._compile (node:internal/modules/cjs/loader:1256:14)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1310:10)
+    at Module.load (node:internal/modules/cjs/loader:1119:32)
+    at Module._load (node:internal/modules/cjs/loader:960:12)
+    at Object.<anonymous> (/home/balls/.nvm/versions/node/v18.16.1/lib/node_modules/pm2/lib/ProcessContainerFork.js:33:23) {
+  code: 'EADDRINUSE',
+  errno: -98,
+  syscall: 'listen',
+  address: '::',
+  port: 80
+}
+Error: listen EADDRINUSE: address already in use :::80
+    at Server.setupListenHandle [as _listen2] (node:net:1740:16)
+    at listenInCluster (node:net:1788:12)
+    at Server.listen (node:net:1876:7)
+    at Function.listen (/home/balls/sites/fennec/node_modules/express/lib/application.js:635:24)
+    at Object.<anonymous> (/home/balls/sites/fennec/app.js:14:18)
+    at Module._compile (node:internal/modules/cjs/loader:1256:14)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1310:10)
+    at Module.load (node:internal/modules/cjs/loader:1119:32)
+    at Module._load (node:internal/modules/cjs/loader:960:12)
+    at Object.<anonymous> (/home/balls/.nvm/versions/node/v18.16.1/lib/node_modules/pm2/lib/ProcessContainerFork.js:33:23) {
+  code: 'EADDRINUSE',
+  errno: -98,
+  syscall: 'listen',
+  address: '::',
+  port: 80
+}
+Error: listen EADDRINUSE: address already in use :::80
+    at Server.setupListenHandle [as _listen2] (node:net:1740:16)
+    at listenInCluster (node:net:1788:12)
+    at Server.listen (node:net:1876:7)
+    at Function.listen (/home/balls/sites/fennec/node_modules/express/lib/application.js:635:24)
+    at Object.<anonymous> (/home/balls/sites/fennec/app.js:14:18)
+    at Module._compile (node:internal/modules/cjs/loader:1256:14)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1310:10)
+    at Module.load (node:internal/modules/cjs/loader:1119:32)
+    at Module._load (node:internal/modules/cjs/loader:960:12)
+    at Object.<anonymous> (/home/balls/.nvm/versions/node/v18.16.1/lib/node_modules/pm2/lib/ProcessContainerFork.js:33:23) {
+  code: 'EADDRINUSE',
+  errno: -98,
+  syscall: 'listen',
+  address: '::',
+  port: 80
+}
+Error: listen EADDRINUSE: address already in use :::80
+    at Server.setupListenHandle [as _listen2] (node:net:1740:16)
+    at listenInCluster (node:net:1788:12)
+    at Server.listen (node:net:1876:7)
+    at Function.listen (/home/balls/sites/fennec/node_modules/express/lib/application.js:635:24)
+    at Object.<anonymous> (/home/balls/sites/fennec/app.js:14:18)
+    at Module._compile (node:internal/modules/cjs/loader:1256:14)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1310:10)
+    at Module.load (node:internal/modules/cjs/loader:1119:32)
+    at Module._load (node:internal/modules/cjs/loader:960:12)
+    at Object.<anonymous> (/home/balls/.nvm/versions/node/v18.16.1/lib/node_modules/pm2/lib/ProcessContainerFork.js:33:23) {
+  code: 'EADDRINUSE',
+  errno: -98,
+  syscall: 'listen',
+  address: '::',
+  port: 80
+}
+Error: listen EADDRINUSE: address already in use :::80
+    at Server.setupListenHandle [as _listen2] (node:net:1740:16)
+    at listenInCluster (node:net:1788:12)
+    at Server.listen (node:net:1876:7)
+    at Function.listen (/home/balls/sites/fennec/node_modules/express/lib/application.js:635:24)
+    at Object.<anonymous> (/home/balls/sites/fennec/app.js:14:18)
+    at Module._compile (node:internal/modules/cjs/loader:1256:14)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1310:10)
+    at Module.load (node:internal/modules/cjs/loader:1119:32)
+    at Module._load (node:internal/modules/cjs/loader:960:12)
+    at Object.<anonymous> (/home/balls/.nvm/versions/node/v18.16.1/lib/node_modules/pm2/lib/ProcessContainerFork.js:33:23) {
+  code: 'EADDRINUSE',
+  errno: -98,
+  syscall: 'listen',
+  address: '::',
+  port: 80
+}
+Error: listen EADDRINUSE: address already in use :::80
+    at Server.setupListenHandle [as _listen2] (node:net:1740:16)
+    at listenInCluster (node:net:1788:12)
+    at Server.listen (node:net:1876:7)
+    at Function.listen (/home/balls/sites/fennec/node_modules/express/lib/application.js:635:24)
+    at Object.<anonymous> (/home/balls/sites/fennec/app.js:14:18)
+    at Module._compile (node:internal/modules/cjs/loader:1256:14)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1310:10)
+    at Module.load (node:internal/modules/cjs/loader:1119:32)
+    at Module._load (node:internal/modules/cjs/loader:960:12)
+    at Object.<anonymous> (/home/balls/.nvm/versions/node/v18.16.1/lib/node_modules/pm2/lib/ProcessContainerFork.js:33:23) {
+  code: 'EADDRINUSE',
+  errno: -98,
+  syscall: 'listen',
+  address: '::',
+  port: 80
+}
+Error: listen EADDRINUSE: address already in use :::80
+    at Server.setupListenHandle [as _listen2] (node:net:1740:16)
+    at listenInCluster (node:net:1788:12)
+    at Server.listen (node:net:1876:7)
+    at Function.listen (/home/balls/sites/fennec/node_modules/express/lib/application.js:635:24)
+    at Object.<anonymous> (/home/balls/sites/fennec/app.js:14:18)
+    at Module._compile (node:internal/modules/cjs/loader:1256:14)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1310:10)
+    at Module.load (node:internal/modules/cjs/loader:1119:32)
+    at Module._load (node:internal/modules/cjs/loader:960:12)
+    at Object.<anonymous> (/home/balls/.nvm/versions/node/v18.16.1/lib/node_modules/pm2/lib/ProcessContainerFork.js:33:23) {
+  code: 'EADDRINUSE',
+  errno: -98,
+  syscall: 'listen',
+  address: '::',
+  port: 80
+}
+Error: listen EADDRINUSE: address already in use :::80
+    at Server.setupListenHandle [as _listen2] (node:net:1740:16)
+    at listenInCluster (node:net:1788:12)
+    at Server.listen (node:net:1876:7)
+    at Function.listen (/home/balls/sites/fennec/node_modules/express/lib/application.js:635:24)
+    at Object.<anonymous> (/home/balls/sites/fennec/app.js:14:18)
+    at Module._compile (node:internal/modules/cjs/loader:1256:14)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1310:10)
+    at Module.load (node:internal/modules/cjs/loader:1119:32)
+    at Module._load (node:internal/modules/cjs/loader:960:12)
+    at Object.<anonymous> (/home/balls/.nvm/versions/node/v18.16.1/lib/node_modules/pm2/lib/ProcessContainerFork.js:33:23) {
+  code: 'EADDRINUSE',
+  errno: -98,
+  syscall: 'listen',
+  address: '::',
+  port: 80
+}
+Error: listen EADDRINUSE: address already in use :::80
+    at Server.setupListenHandle [as _listen2] (node:net:1740:16)
+    at listenInCluster (node:net:1788:12)
+    at Server.listen (node:net:1876:7)
+    at Function.listen (/home/balls/sites/fennec/node_modules/express/lib/application.js:635:24)
+    at Object.<anonymous> (/home/balls/sites/fennec/app.js:14:18)
+    at Module._compile (node:internal/modules/cjs/loader:1256:14)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1310:10)
+    at Module.load (node:internal/modules/cjs/loader:1119:32)
+    at Module._load (node:internal/modules/cjs/loader:960:12)
+    at Object.<anonymous> (/home/balls/.nvm/versions/node/v18.16.1/lib/node_modules/pm2/lib/ProcessContainerFork.js:33:23) {
+  code: 'EADDRINUSE',
+  errno: -98,
+  syscall: 'listen',
+  address: '::',
+  port: 80
+}

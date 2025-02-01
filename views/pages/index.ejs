@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<head>
+    <title>hi :3</title>
+    <%- include('partial/head', {title: 'index'});%>
+    <meta name="description" content="new and improved™ fennec dot lol !!">
+</head>
+
+<canvas id="canvas"></canvas>
+
+<body>
+<h1>fennec.lol</h1>
+
+<%
+var d = new Date();
+var day = d.getDay();
+if (day == 5) { %>
+    <%- include ("partial/fenfriday"); %>
+<%}%>
+<div class="card-container">
+    <div id="column1" class="column">
+        <div id="statusCard" class="card">
+            <h3>news</h3>
+            <p></p>
+            <p>1/18/25 - :3</p>
+        </div>
+        <div id="musicCard" class="card">
+            <div id="overflow">
+                <h3 id="songTitle">blah blah blah blah blah blah</h3>
+            </div>
+            <span id="musicbuttons" >
+                <audio src="/files/NUMBER%2012%20COCK.opus" controls></audio>
+                <img src="/icons/skip-back.svg"></img>
+                <img src="/icons/pause.svg"></img>
+                <img src="/icons/skip-forward.svg"></img>
+            </span>
+        </div>
+        <div id="fenCard" class="card">
+            <h3>random fen</h3>
+            <img id="randomFen" src="https://fendb.fennec.lol/random_image/download/fennec%20content=image"></img>
+            <span id="fenbuttons" >
+            <img src="/icons/refresh2.svg" onclick="getRandomFen()"></img>
+            <img id="pause" src="/icons/pause.svg" onclick="pauseRandomFen()"></img>
+            </span>
+        </div>
+    </div>
+    <div id="column2" class="column">
+        <div id="linksCard" class="card">
+            <h3>links</h3>
+            <a href="/about" class="button">about</a>
+            <a href="https://fendb.fennec.lol" class="button">fen stash</a>
+            <a href="https://old.fennec.lol/important" class="button">important pictures</a>
+            <a href="https://old.fennec.lol/qna" class="button">ask stuff</a>
+            <a href="/test" class="button">test</a>
+        </div>
+        <div id="toolCard" class="card">
+            <h3>tools</h3>
+            <a href="/files" class="button">file upload</a>
+            <a href="/ip" class="button">ip address</a>
+        </div>
+    </div>
+    <div id="column3" class="column">
+        <div id="chatCard" class="card">
+            <div id="chatHeader">
+            <h3>chat</h3>
+            <a href="/chat"><img src="/icons/expand.svg"></img></a>
+            </div>
+            <div id="chat">
+            <div id="messages"></div>
+            </div>
+        </div>
+        <div id="themeCard" class="card">
+            <h3>theme</h3>
+            <p onclick="switchTheme('default')"><u>default</u></p>
+            <p onclick="switchTheme('aero')"><u>aero</u></p>
+            <p onclick="switchTheme('neon')"><u>neon</u></p>
+            <br><br>
+            <pp>current theme: <span id="themename">default</span></pp>
+        </div>
+        <div id="testCard" class="card">
+            <h3>test</h3>
+            <img src="/balls/fen.jpg"></img>
+        </div>
+    </div>
+</div>
+<a href="https://old.fennec.lol">old site</a>
+</body>
+<script src="/chat/socket.io/socket.io.min.js"></script>
+<script src="/scripts/bg-effects/stars.js"></script>
+<script>
+var paused = false;
+setInterval(getRandomFen, 10000);
+
+function getRandomFen() {
+    if (window.paused === false) {
+        document.getElementById('randomFen').src = "https://fendb.fennec.lol/random_image/download/fennec%20content=image?" + new Date().getTime();
+    }
+}
+
+function pauseRandomFen() {
+    if (window.paused === true) {
+        document.getElementById("pause").style = "";
+        window.paused = false;
+    } else {
+        document.getElementById("pause").style = "transform: scale(130%)";
+        window.paused = true;
+    }
+}
+
+function switchTheme(ass) {
+    switch (ass) {
+        case "aero":
+            document.getElementById("theme").href = "/styles/theme-aero.css";
+            document.getElementById("themename").innerText = "aero";
+            localStorage.setItem("theme", "aero");
+            break;
+        case "neon":
+            document.getElementById("theme").href = "/styles/theme-neon.css";
+            document.getElementById("themename").innerText = "neon";
+            localStorage.setItem("theme", "neon");
+            break;
+        default:
+            document.getElementById("theme").href = "";
+            document.getElementById("themename").innerText = "default";
+            localStorage.removeItem("theme");
+    }
+}
+
+var sesTheme = localStorage.getItem("theme");
+if (sesTheme) {switchTheme(sesTheme)};
+
+//chat
+
+async function fetchmsg() {
+  let response = await fetch('/chat/messages/limit');
+        if (response.status == 200) {
+            listMsg(await response.json()); 
+        } else {
+            document.getElementById("messages").innerHTML = ":(";
+        }
+};
+
+function listMsg(res) {
+for (var i = 0; i < res.length; i++) {
+  var li = document.createElement('p');
+  li.textContent = `${res[i].user}: ${res[i].message}`;
+  messages.appendChild(li);
+}
+};
+
+fetchmsg();
+
+var socket = io("/chat", { path: "/chat/socket.io" });
+
+socket.on('chat message', (data) => {
+  var li = document.createElement('p');
+  li.textContent = `${data.user}: ${data.message}`;
+  messages.appendChild(li);
+  });
+</script>
+

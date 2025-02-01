@@ -1,0 +1,59 @@
+body
+    margin: 50px auto
+    background: #0d7381 url("/bg/vista.jpg") no-repeat fixed center !important
+
+.card-container
+    width: 900px
+    margin-left: auto
+    margin-right: auto
+    word-break: break-word
+    display: flex
+    
+.card
+    background: #47557570//#4b577359
+    //background: linear-gradient(350deg, rgba(60,70,95,.6) 0%, rgba(67, 82, 119, 0.6) 100%)
+    width: 220px
+    margin: 10px 20px 40px 20px
+    padding: 10px 20px 10px 20px
+    border-radius: 20px
+    text-align: center
+    //border: 4px solid #74459f2b
+    box-shadow: 0px 0px 5px 5px #1f263726
+
+    img
+        width: 100%
+        border-radius: 15px
+
+.button
+    display: inline-block
+    position: relative
+    background: #3e859191 !important
+    border-radius: 12px !important
+    padding: 15px 20px 15px 20px
+    margin-bottom: 10px
+    font-size: 15px
+    width: 60%
+    transition-duration: 0.15s
+    &:hover, &:focus
+        background: #4594a291 !important
+        transform: scale(105%)
+    &:active
+            transform: scale(95%)
+
+.button::after
+    content: ''
+    position: absolute
+    top: 0px
+    left: 0px
+    width: 100%
+    height: 50%
+    background: linear-gradient(0deg, #ffffff05 0%, #fff3 100%)
+    box-shadow: inset 0px 2px 1px #ffffff6b
+    border-top-right-radius: 30px
+    border-top-left-radius: 30px
+    border-bottom-right-radius: 100px 40px
+    border-bottom-left-radius: 100px 40px
+
+
+canvas
+    display: none

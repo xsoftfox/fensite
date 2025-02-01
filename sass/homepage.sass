@@ -1,0 +1,51 @@
+.main
+    margin: auto
+
+.links
+    display: grid
+    grid-template-columns: auto auto auto auto auto
+    max-width: 800px
+    margin: auto
+    a
+        text-decoration: none
+    p
+        overflow: hidden
+        white-space: nowrap
+        text-overflow: ellipsis
+        font-size: 14px
+
+.tile
+    height: 150px
+    width: 83px
+    margin: auto
+    border-radius: 10px
+    cursor: pointer
+    transition-duration: 0.15s
+    &:active
+        transform: scale(0.95)
+    &:hover
+        scale: 1.05
+
+.tile-inner
+    background-color: #00000062
+    padding: 20px
+    border-radius: 10px
+
+.favicon
+    width: 40px
+    height: 40px
+    border-radius: 50px
+
+#addtile
+    opacity: 0%
+    &:hover
+        opacity: 100%
+
+
+
+
+    
+//keep at bottom
+@media screen and (max-width: 700px)
+  .links
+    grid-template-columns: auto auto auto auto

@@ -1,0 +1,54 @@
+#main-container
+    max-width: 700px
+    margin: auto
+
+.tiny
+    font-size: 12px
+    
+.tab 
+    overflow: hidden 
+    border-radius: 10px 10px 0px 0px 
+    display: flex
+    button 
+        color: #ffffff
+        background-color: #2a3143
+        float: left 
+        border: none 
+        border-radius: 10px 10px 0px 0px 
+        cursor: pointer 
+        padding: 14px 0px
+        transition: 0.3s 
+        font-size: 16px
+        flex-grow: 1
+        &:hover 
+            background-color: #32394f
+        &.active 
+            background-color: #3a4259
+            
+.tabcontent 
+    padding: 20px 10px 20px 10px
+    border-radius: 0px 0px 10px 10px
+    border-top: none
+    background-color: #3a4259
+    display: none
+
+
+table
+    border: 1px solid #1C6EA4 
+    background-color: #3a4259
+    width: 100% 
+    text-align: left 
+    border-collapse: collapse 
+    tr 
+        &:nth-child(even) 
+            background: #4b546f
+    thead 
+        background: #21273c 
+        th 
+            font-weight: bold 
+            color: #FFFFFF 
+            text-align: left 
+table td, table th 
+    border: 1px solid #AAAAAA 
+    padding: 3px 2px 
+    width:50%
