@@ -1,10 +1,10 @@
 var express = require('express');
 var router = express.Router();
-var mongoose = require('mongoose');
+//var mongoose = require('mongoose');
 
-var conn = mongoose.createConnection("mongodb://127.0.0.1:27017/stats");
-var visitSchema = new mongoose.Schema({id: String, value: Number}, {collection: "visits"});
-var visitCounters = conn.model("visits", visitSchema);
+//var conn = mongoose.createConnection("mongodb://127.0.0.1:27017/stats");
+//var visitSchema = new mongoose.Schema({id: String, value: Number}, {collection: "visits"});
+//var visitCounters = conn.model("visits", visitSchema);
 
 var ref = {"balls.com":"69", "ass.com":"1", "goog.com":"621", "e621.net":"4358763489756"};
 var ua = {"firefox":"2","chrome":"4","internet explorer":"87"};
