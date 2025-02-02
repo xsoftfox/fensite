@@ -7,13 +7,11 @@ var fs = require('fs');
 var http2 = require('http2');
 var https = require('https');
 require('dotenv').config()
-var expressSession = require('express-session');
 
 
 
 var app = express();
 app.enable('trust proxy');
-app.use(expressSession({ secret: 'fat balls', resave: false, saveUninitialized: true }));
 var server = app.listen(80, "::");
 
 var io = require('socket.io')(server, { path: '/chat/socket.io'});
@@ -63,7 +61,9 @@ app.use(express.static(path.join(__dirname, 'static')));
 
 //visit counter
 app.use(function(req, res, next) {
-  console.log(req.get('User-Agent'));
+  console.log(req.get('user-agent'));
+  console.log(req.header('referrer'));
+  console.log(req.query);
   next()
 });
 

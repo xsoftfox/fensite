@@ -8,38 +8,9 @@ var router = express.Router();
 
 var ref = {"balls.com":"69", "ass.com":"1", "goog.com":"621", "e621.net":"4358763489756"};
 var ua = {"firefox":"2","chrome":"4","internet explorer":"87"};
+var visits = {total:"349085732489057"};
 
 router.get('/', async function(req, res) {
-    //var tits = await visitCounters.find();
-    
-    var visitsTotal = await visitCounters.aggregate([
-      { $match: { id: { $regex: /^v2.fennec.lol-sessions/ } } },
-      {$group: { _id: null, total: { $sum: "$value" } } }
-    ]);
-
-    var day = new Date().toLocaleDateString('en-GB').replace(/\//g, '-');
-    var reg1 = "v2.fennec.lol-sessions-" + day;
-    var visitsToday = await visitCounters.aggregate([
-      { $match: { id: reg1 } }
-    ]);
-
-    var visitsAvg = await visitCounters.aggregate([
-      { $match: { id: { $regex: /^v2.fennec.lol-sessions/ } } },
-      {$group: { _id: null, avg: { $avg: "$value" } } }
-    ]);
-
-    var visitsTotalUnique = await visitCounters.aggregate([
-      { $match: { id: { $regex: /^v2.fennec.lol-visitors/ } } },
-      {$group: { _id: null, total: { $sum: "$value" } } }
-    ]);
-
-    var reg2 = "v2.fennec.lol-visitors-" + day;
-    var visitsTodayUnique = await visitCounters.aggregate([
-      { $match: { id: reg2 } }
-    ]);
-
-    var visits = {"total": visitsTotal[0].total, "today": visitsToday[0].value, "avg":visitsAvg[0].avg, "totalUnique":visitsTotalUnique[0].total, "todayUnique": visitsTodayUnique[0].value };
-    console.log(visits);
     res.render("pages/stats", {visits: visits, ref: ref, ua: ua,});
   });
   

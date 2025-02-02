@@ -1,6 +1,7 @@
 var express = require('express');
 var router = express.Router();
 var fs = require('fs');
+const { type } = require('os');
 var path = require("path");
 var db = require('../controllers/db.js').db;
 
@@ -48,5 +49,17 @@ router.post('/dbwrite', async (req, res) => {
 });
 
 //https://www.npmjs.com/package/postgres#queries
+
+
+var boxdata = ["0","4"];
+
+router.get('/boxes/get', function(req, res) {
+  res.json(boxdata);
+});
+
+router.post('/boxes/set', function(req, res) {
+  boxdata = req.body;
+  res.status(200);
+});
 
 module.exports = router;

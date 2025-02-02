@@ -10,3 +10,65 @@
         <%}%>
     </div>
 </body>
+<script>
+
+var selections = [];
+var boxes = document.querySelectorAll("input[type=checkbox]");
+
+for (var i = 0; i < boxes.length; i++) {
+  boxes[i].addEventListener("change", boxclick);
+  if (boxes[i].checked) {
+    selections.push(boxes[i].id);
+  } 
+}
+
+function boxclick(e) {
+  if (e.target.checked) {
+    selections.push(e.target.id);
+  } 
+  else {
+    selections.splice(selections.indexOf(e.target.id), 1);
+  }
+  set();
+}
+
+function check() {
+    for (var i = 0; i < 1000; i++) {
+        var b = i.toString();
+        if (selections.includes(b)) {
+            document.getElementById(b).checked = true;
+        } else {
+            document.getElementById(b).checked = false;
+        }
+    }
+}
+
+
+
+async function get() {
+    let request = await fetch('/api/boxes/get');
+        var response = await request.json();
+        selections = response;
+        //console.log(response);
+};
+
+
+async function set() {
+        await fetch("/api/boxes/set", {
+            method: "POST",
+				headers: {
+                    "Content-Type": "application/json",
+                },
+                body: JSON.stringify(selections)
+            });
+        };
+function update() {
+get();
+check();
+}
+
+setInterval(update, 300);
+
+//this is so ass
+
+</script>
