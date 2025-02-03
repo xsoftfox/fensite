@@ -17,9 +17,6 @@ var boxes = document.querySelectorAll("input[type=checkbox]");
 
 for (var i = 0; i < boxes.length; i++) {
   boxes[i].addEventListener("change", boxclick);
-  if (boxes[i].checked) {
-    selections.push(boxes[i].id);
-  } 
 }
 
 function boxclick(e) {
@@ -42,8 +39,6 @@ function check() {
         }
     }
 }
-
-
 
 async function get() {
     let request = await fetch('/api/boxes/get');
