@@ -51,15 +51,18 @@ router.post('/dbwrite', async (req, res) => {
 //https://www.npmjs.com/package/postgres#queries
 
 
-var boxdata = ["0","4"];
-
-router.get('/boxes/get', function(req, res) {
-  res.json(boxdata);
+router.get('/boxes/get', async (req, res) => {
+  var boxdata = await db`
+  select data from boxes
+  `
+  res.json(boxdata[0].data);
 });
 
-router.post('/boxes/set', function(req, res) {
-  boxdata = req.body;
-  res.status(200);
+router.post('/boxes/set', async (req, res) => {
+  await db`
+  update boxes set data = ${ req.body }
+  `
+  res.end();
 });
 
 module.exports = router;
