@@ -7,19 +7,12 @@ var fs = require('fs');
 var http2 = require('http2');
 var https = require('https');
 require('dotenv').config()
-var expressSession = require('express-session');
-var expressVisitorCounter = require('express-visitor-counter');
-var { MongoClient } = require('mongodb');
 
-(async () => {
-  var dbConnection = await MongoClient.connect('mongodb://127.0.0.1:27017/stats');
-  var coll = dbConnection.db().collection('visits');
 
-  var app = express();
-  app.enable('trust proxy');
-  app.use(expressSession({ secret: 'fat balls', resave: false, saveUninitialized: true }));
-  app.use(expressVisitorCounter({ collection: coll }));
-  var server = app.listen(80, "::");
+
+var app = express();
+app.enable('trust proxy');
+var server = app.listen(80, "::");
 
 var io = require('socket.io')(server, { path: '/chat/socket.io'});
 global.io = io;
@@ -63,6 +56,18 @@ app.use(express.static(path.join(__dirname, 'static')));
 //  }
 //  next();
 //});
+
+
+
+//visit counter
+app.use(function(req, res, next) {
+  console.log(req.get('user-agent'));
+  console.log(req.header('referrer'));
+  console.log(req.query);
+  next()
+});
+
+
 
 app.get('/', function(req, res) {
   res.render('pages/index');
@@ -108,4 +113,3 @@ app.use(function(err, req, res, next) {
 });
 
 module.exports = app;
-})();
