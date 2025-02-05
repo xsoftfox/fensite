@@ -1,19 +1,28 @@
 var express = require('express');
 var router = express.Router();
-//var mongoose = require('mongoose');
-
-//var conn = mongoose.createConnection("mongodb://127.0.0.1:27017/stats");
-//var visitSchema = new mongoose.Schema({id: String, value: Number}, {collection: "visits"});
-//var visitCounters = conn.model("visits", visitSchema);
-
-var ref = {"balls.com":"69", "ass.com":"1", "goog.com":"621", "e621.net":"4358763489756"};
-var ua = {"firefox":"2","chrome":"4","internet explorer":"87"};
-var visits = {total:"349085732489057"};
+var db = require('../controllers/db.js').db;
 
 router.get('/', async function(req, res) {
-    res.render("pages/stats", {visits: visits, ref: ref, ua: ua,});
+  var visits = await db`
+    select count(*) as count from stats
+    `
+  var path = await db`
+    select path, count(*) as count from stats group by path order by count desc
+    `
+  var useragent = await db`
+    select useragent, count(*) as count from stats group by useragent order by count desc
+    `
+  var referrer = await db`
+    select referrer, count(*) as count from stats group by referrer order by count desc
+    `
+  var params = await db`
+    select params, count(*) as count from stats group by params order by count desc
+    `
+
+  //console.log(params);
+
+  res.render("pages/stats", {visits: visits[0].count, path: path, useragent: useragent, referrer: referrer, params: params});
   });
-  
-//this is fucking atrocious but it works
+
 
 module.exports = router;

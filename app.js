@@ -1,18 +1,20 @@
 var createError = require('http-errors');
 var express = require('express');
 var path = require('path');
-var cookieParser = require('cookie-parser');
 var logger = require('morgan');
 var fs = require('fs');
 var http2 = require('http2');
 var https = require('https');
-require('dotenv').config()
-
-
+require('dotenv').config();
+var session = require('express-session');
 
 var app = express();
-app.enable('trust proxy');
+app.enable('trust proxy', 1);
 var server = app.listen(80, "::");
+
+app.use(session({ secret: 'big fat balls', resave: false, saveUninitialized: true, httpOnly: true, cookie: { maxAge: 3600000, sameSite: true }}))
+var visitCount = require('./middleware/visitCount.js');
+app.use(visitCount);
 
 var io = require('socket.io')(server, { path: '/chat/socket.io'});
 global.io = io;
@@ -44,7 +46,6 @@ app.disable('x-powered-by');
 app.use(logger('dev'));
 app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
-app.use(cookieParser());
 
 //serve static files
 app.use(express.static(path.join(__dirname, 'static')));
@@ -56,18 +57,6 @@ app.use(express.static(path.join(__dirname, 'static')));
 //  }
 //  next();
 //});
-
-
-
-//visit counter
-app.use(function(req, res, next) {
-  console.log(req.get('user-agent'));
-  console.log(req.header('referrer'));
-  console.log(req.query);
-  next()
-});
-
-
 
 app.get('/', function(req, res) {
   res.render('pages/index');

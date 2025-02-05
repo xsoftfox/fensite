@@ -1,5 +1,4 @@
-<% if (typeof title === 'undefined') { title = 'title'}; %>
-<title><%= title %></title>
+<title><%= title ?? ":3" %></title>
 <link rel="stylesheet" href="/styles/main.css"/>
 <link rel="stylesheet" href="" id="theme"/>
 <link rel="stylesheet" href="/styles/<%= title %>.css"/>
@@ -7,5 +6,5 @@
 <meta charset="UTF-8">
 <link rel="icon" href="/favicon.ico">
 <% if (title !== "index") {%>
-<a href="/"><img class="back" src="/icons/back.svg" title="back"></img></a>
+<a href="../"><img class="back" src="/icons/back.svg" title="back"></img></a>
 <%}%>

@@ -6,7 +6,7 @@
     <div id="main-container">
         <h2>Site Stats
         </h2>
-            <p>hi ill prob put some extra text here later</p>
+            <p>cool stats about visitor count and stuff :3</p>
 
             <div class="tab">
               <button class="tablinks active" onclick="openTab(event, 'tab1')" id="defaultOpen">visitors</button>
@@ -20,27 +20,19 @@
                 <tbody>
                     <tr>
                         <td>total visits</td>
-                        <td><%=visits.total%></td>
+                        <td><%=visits%></td>
                     </tr>
                     <tr>
                         <td>visits today</td>
-                        <td><%=visits.today%></td>
+                        <td></td>
                     </tr>
                     <tr>
                         <td>average visits/day</td>
-                        <td><%=visits.avg%></td>
-                    </tr>
-                    <tr>
-                        <td>unique visits</td>
-                        <td><%=visits.totalUnique%></td>
-                    </tr>
-                    <tr>
-                        <td>unique visits today</td>
-                        <td><%=visits.todayUnique%></td>
+                        <td></td>
                     </tr>
                 </tbody>
             </table>
-            <p class="tiny"><i>since 6/2/24</i></p>
+            <p class="tiny"><i>since 2/5/25</i></p>
             </div>
 
             <div id="tab2" class="tabcontent">
@@ -52,10 +44,10 @@
                         </tr>
                     </thead>
                     <tbody>
-                        <% for (const [str, value] of Object.entries(ref)) { %>
+                        <% for (var i = 0; i < referrer.length; i++) { %>
                             <tr>
-                            <td><%= str %></td>
-                            <td><%= value %></td>
+                            <td><%= referrer[i].referrer %></td>
+                            <td><%= referrer[i].count %></td>
                             </tr>
                         <% } %>
                     </tbody>
@@ -71,10 +63,10 @@
                         </tr>
                     </thead>
                     <tbody>
-                        <% for (var [str, value] of Object.entries(ua)) { %>
+                        <% for (var i = 0; i < useragent.length; i++) { %>
                             <tr>
-                            <td><%= str %></td>
-                            <td><%= value %></td>
+                            <td><%= useragent[i].useragent %></td>
+                            <td><%= useragent[i].count %></td>
                             </tr>
                         <% } %>
                     </tbody>
@@ -86,6 +78,7 @@
               <a href="https://stats.uptimerobot.com/SEzzGaUjSN">https://stats.uptimerobot.com/SEzzGaUjSN</a>
             </div>
     </div>
+    <p class="tiny">stats are based on session cookies which expire after 1 hour, you wont be counted as a new visitor until then :3</p>
 </body>
 <script>
     function openTab(evt, tab) {

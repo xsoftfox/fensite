@@ -9,8 +9,14 @@
             <input type="checkbox" id="<%= i %>"</input>
         <%}%>
     </div>
+    <p>inspired by <a href="//onemillioncheckboxes.com">onemillioncheckboxes.com</a></p>
 </body>
 <script>
+
+if (window.navigator.userAgent.includes("iPhone")) {
+  document.getElementById("boxes").style.width = "280px";
+}
+
 
 var selections = [];
 var boxes = document.querySelectorAll("input[type=checkbox]");
