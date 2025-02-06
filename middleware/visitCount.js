@@ -1,10 +1,11 @@
 var db = require('../controllers/db.js').db;
 
 module.exports = async function visitCount(req, res, next) {
-    //console.log(req.get('user-agent'));
-    //console.log(req.header('referrer'));
-    //console.log(req.query);
-    //console.log(req.path);
+    
+    if (req.get('user-agent').match(/(bot|client|crawl)/i)) {
+      res.send("begone bot");
+      return;
+    }
     
     var dbget = await db`
         select

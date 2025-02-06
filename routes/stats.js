@@ -5,7 +5,7 @@ var db = require('../controllers/db.js').db;
 router.get('/', async function(req, res) {
 
   var visits = await db`
-    select count(date) as count from stats
+    select count(*) as count from stats
     `
   var visitstoday = await db`
     select count(date) from stats where date = CURRENT_DATE group by date
