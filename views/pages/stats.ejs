@@ -22,15 +22,15 @@
                 <tbody>
                     <tr>
                         <td>total visits</td>
-                        <td><%=visits%></td>
+                        <td><%= visits %></td>
                     </tr>
                     <tr>
                         <td>visits today</td>
-                        <td></td>
+                        <td><%= visitstoday %></td>
                     </tr>
                     <tr>
                         <td>average visits/day</td>
-                        <td></td>
+                        <td><%= Math.trunc(visitsavg) %></td>
                     </tr>
                 </tbody>
             </table>
