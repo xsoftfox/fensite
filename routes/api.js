@@ -65,4 +65,19 @@ router.post('/boxes/set', async (req, res) => {
   res.end();
 });
 
+router.get('/:3', async (req, res) => {
+  var three = await db`
+  select total from three
+  `
+  res.json(three[0].total);
+});
+
+router.post('/:3', async (req, res) => {
+  var three = await db`
+  update three set total = total +1
+  returning total
+  `
+  res.json(three[0].total);
+});
+
 module.exports = router;
