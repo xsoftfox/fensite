@@ -12,7 +12,9 @@
               <button class="tablinks active" onclick="openTab(event, 'tab1')" id="defaultOpen">visitors</button>
               <button class="tablinks" onclick="openTab(event, 'tab2')">referrals</button>
               <button class="tablinks" onclick="openTab(event, 'tab3')">user agents</button>
-              <button class="tablinks" onclick="openTab(event, 'tab4')">uptime</button>
+              <button class="tablinks" onclick="openTab(event, 'tab4')">request paths</button>
+              <button class="tablinks" onclick="openTab(event, 'tab5')">url params</button>
+              <button class="tablinks" onclick="openTab(event, 'tab6')">uptime</button>
             </div>
 
             <div id="tab1" class="tabcontent" style="display:block;">
@@ -75,7 +77,45 @@
             </div>
 
             <div id="tab4" class="tabcontent">
-              <a href="https://stats.uptimerobot.com/SEzzGaUjSN">https://stats.uptimerobot.com/SEzzGaUjSN</a>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>request</th>
+                            <th>times acessed</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <% for (var i = 0; i < path.length; i++) { %>
+                            <tr>
+                            <td><%= path[i].path %></td>
+                            <td><%= path[i].count %></td>
+                            </tr>
+                        <% } %>
+                    </tbody>
+                </table> 
+            </div>
+
+            <div id="tab5" class="tabcontent">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>?</th>
+                            <th>times seen</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <% for (var i = 0; i < params.length; i++) { %>
+                            <tr>
+                            <td><%= params[i].params %></td>
+                            <td><%= params[i].count %></td>
+                            </tr>
+                        <% } %>
+                    </tbody>
+                </table> 
+            </div>
+
+            <div id="tab6" class="tabcontent">
+                <a href="https://stats.uptimerobot.com/SEzzGaUjSN">https://stats.uptimerobot.com/SEzzGaUjSN</a>
             </div>
     </div>
     <p class="tiny">stats are based on session cookies which expire after 1 hour, you wont be counted as a new visitor until then :3</p>

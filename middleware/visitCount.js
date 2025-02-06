@@ -36,7 +36,7 @@ module.exports = async function visitCount(req, res, next) {
             session: req.session.id ?? null,
             path: req.path ?? null,
             useragent: req.get('user-agent') ?? null,
-            referrer: req.header('referrer') ?? null,
+            referrer: req.header('referrer').replace(/\/$/, "") ?? null,
             params: JSON.stringify(req.query) ?? null,
         }
 
