@@ -77,8 +77,9 @@ if (day == 5) { %>
             <pp>current theme: <span id="themename">default</span></pp>
         </div>
         <div id="testCard" class="card">
-            <h3>test</h3>
-            <img src="/balls/fen.jpg"></img>
+            <h3>:3</h3>
+            <img src=":3.png" id="three" onclick="three()">
+            <p id="threetotal">click to :3</p>
         </div>
     </div>
 </div>
@@ -155,6 +156,21 @@ socket.on('chat message', (data) => {
   var li = document.createElement('p');
   li.textContent = `${data.user}: ${data.message}`;
   messages.appendChild(li);
-  });
+});
+
+async function three() {
+    new Audio("honk.ogg").play();
+
+    document.getElementById("three").src = "x3.png";
+    document.getElementById("three").classList.add('bouncy');
+    let response = await fetch('/api/:3', {method: "POST"});
+    document.getElementById("threetotal").innerHTML = ":3 counter: " + await response.json();
+    
+    setTimeout(() => {
+        document.getElementById("three").src = ":3.png";
+        document.getElementById("three").classList.remove('bouncy');
+    }, "500");
+
+};
 </script>
 

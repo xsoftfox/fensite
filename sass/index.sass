@@ -123,6 +123,39 @@ body
     p
         display: inline
 
+canvas
+    position: fixed
+    top: 0px
+    left: 0px
+    z-index: -2
+
+
+#three
+    width: 69px
+    image-rendering: pixelated
+    transition-duration: 0.2s
+    &:active
+        transform: scaley(90%)
+        transform-origin: bottom
+
+.bouncy
+    animation: bounce 0.2s
+    animation-direction: alternate
+    animation-iteration-count: 2
+    
+@keyframes bounce
+  from
+    transform: translate3d(0, 0, 0) scaleX(0.95)
+
+  to
+    transform: translate3d(0, -20px, 0) scaleX(1)
+
+
+
+
+
+
+
 //leave at bottom
 @media screen and (max-width: 900px)
   .card-container
@@ -146,9 +179,3 @@ body
 
   #musicCard
     order: 2
-
-canvas
-    position: fixed
-    top: 0px
-    left: 0px
-    z-index: -2
