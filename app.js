@@ -7,9 +7,7 @@ var http2 = require('http2');
 var https = require('https');
 require('dotenv').config();
 var session = require('express-session');
-
 var app = express();
-app.enable('trust proxy', 1);
 var server = app.listen(80, "::");
 
 app.use(session({ secret: 'big fat balls', resave: false, saveUninitialized: true, httpOnly: true, cookie: { maxAge: 3600000, sameSite: true }}))
@@ -18,6 +16,20 @@ app.use(visitCount);
 
 var io = require('socket.io')(server, { path: '/chat/socket.io'});
 global.io = io;
+ 
+app.set('views', path.join(__dirname, 'views'));
+app.set('view engine', 'ejs');
+app.set('trust proxy', '10.10.10.1');
+app.disable('x-powered-by');
+app.use(logger('dev'));
+app.use(express.json());
+app.use(express.urlencoded({ extended: false }));
+app.use(express.static(path.join(__dirname, 'static')));
+
+
+app.get('/', function(req, res) {
+  res.render('pages/index');
+});
 
 var apiRouter = require('./routes/api');
 var chatRouter = require('./routes/chat');
@@ -26,41 +38,6 @@ var filesRouter = require('./routes/files');
 var streamRouter = require('./routes/stream');
 var statsRouter = require('./routes/stats');
 var homepageRouter = require('./routes/homepage');
-
-//disabled - ssl handled by proxy
-//var sslOptions = {
-//  'key' : fs.readFileSync(process.env.SSL_KEY),
-//  'cert' : fs.readFileSync(process.env.SSL_CERT)
-//}
-
-//https.createServer(sslOptions, app)
-//  .listen(443, () => {
-//    console.log("https started on port 443");
-//  });
- 
-app.set('views', path.join(__dirname, 'views'));
-app.set('view engine', 'ejs');
-app.set('trust proxy', '10.10.10.1');
-
-app.disable('x-powered-by');
-app.use(logger('dev'));
-app.use(express.json());
-app.use(express.urlencoded({ extended: false }));
-
-//serve static files
-app.use(express.static(path.join(__dirname, 'static')));
-
-//redirect http - handled by proxy
-//app.use((req, res, next) => {
-//  if (req.protocol === 'http') {
-//      return res.redirect(301, `https://${req.headers.host}${req.url}`);
-//  }
-//  next();
-//});
-
-app.get('/', function(req, res) {
-  res.render('pages/index');
-});
 
 app.use('/api', apiRouter);
 app.use('/chat', chatRouter);

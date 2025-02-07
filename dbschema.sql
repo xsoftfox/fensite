@@ -5,6 +5,9 @@ CREATE TABLE "public"."boxes" (
     "data" json NOT NULL
 ) WITH (oids = false);
 
+INSERT INTO "boxes" ("data") VALUES
+("{}");
+
 
 DROP TABLE IF EXISTS "chat";
 CREATE TABLE "public"."chat" (
@@ -33,4 +36,13 @@ CREATE TABLE "public"."stats" (
 ) WITH (oids = false);
 
 
--- 2025-02-05 17:49:12.800942-05
+DROP TABLE IF EXISTS "three";
+CREATE TABLE "public"."three" (
+    "total" integer NOT NULL,
+    CONSTRAINT ":3_pkey" PRIMARY KEY ("total")
+) WITH (oids = false);
+
+INSERT INTO "three" ("total") VALUES
+(0);
+
+-- 2025-02-06 21:26:04.255028-05
