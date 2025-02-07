@@ -5,6 +5,7 @@
     <meta name="description" content="new and improved™ fennec dot lol !!">
     <link rel="preload" as="image" href=":3.png" />
     <link rel="preload" as="image" href="x3.png" />
+    <link rel="prefetch" href="honk.ogg" />
 </head>
 
 <canvas id="canvas"></canvas>
@@ -82,6 +83,7 @@ if (day == 5) { %>
             <h3>:3</h3>
             <img src=":3.png" id="three" onclick="three()">
             <p id="threetotal">click to :3</p>
+            <audio id="honk" preload src="honk.ogg"></audio>
         </div>
     </div>
 </div>
@@ -171,7 +173,7 @@ async function three() {
     setTimeout(() => {
         document.getElementById("three").src = ":3.png";
         document.getElementById("three").classList.remove('bouncy');
-    }, "500");
+    }, "400");
 
 };
 </script>
