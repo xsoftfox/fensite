@@ -1,10 +1,17 @@
 var db = require('../controllers/db.js').db;
+var ref;
 
 module.exports = async function visitCount(req, res, next) {
     
     if (req.get('user-agent').match(/(bot|client|crawl)/i)) {
       res.send("begone bot");
       return;
+    }
+
+    if (req.header('referrer') && req.header('referrer').endsWith('/')) {
+        var ref = req.header('referrer').slice(0,-1);
+    } else {
+        var ref = req.header('referrer') ?? null;
     }
     
     var dbget = await db`
@@ -37,7 +44,7 @@ module.exports = async function visitCount(req, res, next) {
             session: req.session.id ?? null,
             path: req.path ?? null,
             useragent: req.get('user-agent') ?? null,
-            referrer: req.header('referrer') ?? null,
+            referrer: ref,
             params: JSON.stringify(req.query) ?? null,
         }
 
@@ -46,9 +53,6 @@ module.exports = async function visitCount(req, res, next) {
             db(data, 'session', 'path', 'useragent', 'referrer', 'params')
         }
         `
-        //console.log('first view');
-    } else {
-      //console.log("not first view")
     }
 
     //console.log("AAAAAAA" + JSON.stringify(req.query) + req.session.id + req.session.views);

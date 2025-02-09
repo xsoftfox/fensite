@@ -25,7 +25,7 @@ router.get('/', async function(req, res) {
     select useragent, count(*) as count from stats group by useragent order by count desc
     `
   var referrer = await db`
-    select referrer, count(*) as count from stats group by referrer order by count desc
+    select referrer, count(*) as count from stats where referrer not like '%fennec.lol%' group by referrer order by count desc
     `
   var params = await db`
     select params, count(*) as count from stats group by params order by count desc
