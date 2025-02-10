@@ -1,11 +1,17 @@
 var db = require('../controllers/db.js').db;
+var path = require('path');
 var ref;
 
 module.exports = async function visitCount(req, res, next) {
     
-    if (req.get('user-agent').match(/(bot|client|crawl)/i)) {
-      res.send("begone bot");
-      return;
+    if (req.path.match(/(^\/wp|^\/wordpress|^\/bc|^\/bk|^\/backup|^\/old|^\/new|^\/main|^\/home)/i)) {
+        res.sendFile(path.resolve('./funny.html'));
+        return;
+    }
+
+    if (req.get('user-agent').match(/(bot|client|crawl|scan|headless)/i)) {
+        res.send("begone bot");
+        return;
     }
 
     if (req.header('referrer') && req.header('referrer').endsWith('/')) {
