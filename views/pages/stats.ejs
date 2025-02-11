@@ -34,6 +34,7 @@
                     </tr>
                 </tbody>
             </table>
+            <canvas id="visitChart"></canvas>
             <p class="tiny"><i>since 2/8/25</i></p>
             </div>
 
@@ -120,6 +121,7 @@
     </div>
     <p class="tiny">stats are based on session cookies which expire after 1 hour, you wont be counted as a new visitor until then :3</p>
 </body>
+<script src="/scripts/chart.js"></script>
 <script>
     function openTab(evt, tab) {
       var i, tabcontent, tablinks;
@@ -141,6 +143,29 @@
     
     document.getElementById("ua").innerText = window.navigator.userAgent;
   
-
+    //chart
+    Chart.defaults.color = "#ffffff";
+    var ctx = document.getElementById('visitChart').getContext('2d');
+    var data = <%- JSON.stringify(visitsGraph) %>;
+    new Chart(ctx, {
+        type: "line",
+        data: {
+            datasets: [{
+                color: "#ffffff",
+                backgroundColor: "#ffffff",
+                borderColor: "#ffffff",
+                data: data
+            }]
+        },
+        options: {
+            parsing: {
+                xAxisKey: 'date',
+                yAxisKey: 'count'
+            },
+            plugins: {
+                legend: {display: false},
+            }
+        }
+    });
     </script>
        

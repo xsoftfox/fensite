@@ -18,6 +18,10 @@ router.get('/', async function(req, res) {
     group by date
   ) ass
   `
+   //i didnt expect this to just work holy shit
+  var visitsGraph = await db`
+  select right(left(date::varchar(255), 10), -5) as date, count(date) from stats group by date order by date asc limit 30
+  `
   var path = await db`
     select path, count(*) as count from stats group by path order by count desc
     `
@@ -31,9 +35,9 @@ router.get('/', async function(req, res) {
     select params, count(*) as count from stats group by params order by count desc
     `
 
-  //console.log(visitsavg);
+  //console.log(visitsGraph);
 
-  res.render("pages/stats", {visits: visits[0].count, visitstoday: visitstoday[0].count, visitsavg: visitsavg[0].visitsavg, path: path, useragent: useragent, referrer: referrer, params: params});
+  res.render("pages/stats", {visits: visits[0].count, visitstoday: visitstoday[0].count, visitsavg: visitsavg[0].visitsavg, visitsGraph: visitsGraph, path: path, useragent: useragent, referrer: referrer, params: params});
   });
 
 

@@ -4,6 +4,7 @@ var ref;
 
 module.exports = async function visitCount(req, res, next) {
     
+    //i cant be botherd to set up a waf
     if (req.path.match(/(^\/wp|^\/wordpress|^\/bc|^\/bk|^\/backup|^\/old|^\/new|^\/main|^\/home)/i)) {
         res.sendFile(path.resolve('./funny.html'));
         return;
