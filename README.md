@@ -1,3 +1,5 @@
+note: the main repo is [here](https://git.fennec.lol/fox/fennec.lol) this is just for backup purposes :3
+
 # the fensite
 
 [fennec.lol](https://fennec.lol)
