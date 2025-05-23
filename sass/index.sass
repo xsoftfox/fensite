@@ -1,10 +1,10 @@
 body
     margin: 50px auto
     background-color: #242b3c
-    background: linear-gradient(45deg, #59246c 0%, #3f135e 50%, #242b3c 100%)
+    background: linear-gradient(180deg,#040D16 0%, #091C30 100%)
 
 .card-container
-    width: 900px
+    width: fit-content
     margin-left: auto
     margin-right: auto
     word-break: break-word
@@ -123,7 +123,7 @@ body
     p
         display: inline
 
-canvas
+#bgcanvas
     position: fixed
     top: 0px
     left: 0px
@@ -138,6 +138,42 @@ canvas
         transform: scaley(90%)
         transform-origin: bottom
 
+#confetti
+    width: 300px
+    height: 400px
+    position: relative
+    bottom: 300px
+    right: 40px
+    pointer-events: none
+
+.floatyright
+    font-size: 10px
+    position: relative
+    margin: -6px
+    inset: auto auto 44px 58px
+    z-index: 2
+    pointer-events: none
+    color: #7dabe6
+    text-shadow: #55135773 0.5px 0px
+    animation: zoomright 0.25s
+    animation-direction: alternate
+    animation-timing-function: cubic-bezier(.5, 0.05, 0.8, .5)
+    animation-iteration-count: infinite
+
+.floatyleft
+    font-size: 10px
+    position: relative
+    margin: -6px
+    inset: auto auto 44px -58px
+    z-index: 2
+    pointer-events: none
+    color: #ea7070
+    text-shadow: #55135773 0.5px 0px
+    animation: zoomleft 0.25s
+    animation-direction: alternate
+    animation-timing-function: cubic-bezier(.5, 0.05, 0.8, .5)
+    animation-iteration-count: infinite
+
 .bouncy
     animation: bounce 0.2s
     animation-direction: alternate
@@ -150,8 +186,19 @@ canvas
   to
     transform: translate3d(0, -20px, 0) scaleX(1)
 
+@keyframes zoomright
+    from
+        transform: scale(1) rotate(20deg)
+        
+    to
+        transform: scale(0.8) rotate(20deg)
 
-
+@keyframes zoomleft
+    from
+        transform: scale(1) rotate(-20deg)
+        
+    to
+        transform: scale(0.8) rotate(-20deg)
 
 
 
@@ -160,7 +207,6 @@ canvas
 @media screen and (max-width: 900px)
   .card-container
     display: block
-    width: 100vw
 
   .card
     margin-bottom: 20px

@@ -1,0 +1,64 @@
+body
+    background: linear-gradient(90deg, #0f111a 0%, #1c1a33 100%)
+
+.button
+    background: linear-gradient(#11192d, #11192d) padding-box, linear-gradient(69deg, darkblue, darkorchid) border-box
+    border-radius: 5px
+    border: 5px solid #74459f2b
+    transition-duration: 0.15s
+    &:hover, &:focus
+        background: linear-gradient(#1c2745, #1c2745) padding-box, linear-gradient(30deg, darkblue, darkorchid) border-box
+
+canvas
+    display: none
+
+
+
+
+
+//credit to https://codepen.io/gayane-gasparyan/pen/jOmaBQK for this awesome animated effect <3
+
+@property --rotate
+  syntax: "<angle>"
+  initial-value: 132deg
+  inherits: false
+
+.card
+  background: linear-gradient(#191c29, #070709) padding-box
+  position: relative
+  border-radius: 6px
+
+  img
+        border-radius: 5px
+
+  &::before
+    content: ""
+    width: 104%
+    height: 104%
+    border-radius: 8px
+    background-image: linear-gradient(var(--rotate), #5ddcff, #3c67e3 43%, #4e00c2)
+    position: absolute
+    z-index: -1
+    top: -2%
+    left: -2%
+    animation: spin 3s linear infinite
+
+  &::after
+    position: absolute
+    content: ""
+    top: 0px
+    left: 0
+    z-index: -1
+    height: 100%
+    width: 100%
+    transform: scale(0.9)
+    filter: blur(20px)
+    background-image: linear-gradient(var(--rotate), #5ddcff, #3c67e3 43%, #4e00c2)
+    animation: spin 3s linear infinite
+
+@keyframes spin
+  0%
+    --rotate:0deg
+
+  100%
+    --rotate:360deg

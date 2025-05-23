@@ -1,7 +1,8 @@
 //credit to Blindman67 https://stackoverflow.com/a/44493489 <3
 
+var bgcanvas = document.getElementById('bgcanvas');
 
-const ctx = canvas.getContext("2d");
+const ctx = bgcanvas.getContext("2d");
 // function calls a callback count times. Saves typing out for loops all the time 
 const doFor = (count, callback) => {
   var i = 0;
@@ -73,16 +74,16 @@ var skyGrad;
 // render the stars
 function mainLoop(time) {
   // resize canva if page size changes
-  if (canvas.width !== innerWidth || canvas.height !== innerHeight) {
-    canvas.width = innerWidth;
-    canvas.height = innerHeight;
+  if (bgcanvas.width !== innerWidth || bgcanvas.height !== innerHeight) {
+    bgcanvas.width = innerWidth;
+    bgcanvas.height = innerHeight;
     // create a new set of stars 
     stars.length = 0;
-    // density is number of pixels one the canvas that has one star
-    starCount = Math.floor((canvas.width * canvas.height) / density);
+    // density is number of pixels one the bgcanvas that has one star
+    starCount = Math.floor((bgcanvas.width * bgcanvas.height) / density);
     // create the random stars;
-    doFor(starCount, () => createStar(point(randI(canvas.width), randI(canvas.height))));
-    skyGrad = ctx.createLinearGradient(0,0,0,canvas.height);
+    doFor(starCount, () => createStar(point(randI(bgcanvas.width), randI(bgcanvas.height))));
+    skyGrad = ctx.createLinearGradient(0,0,0,bgcanvas.height);
     skyGrad.addColorStop(0,"black");
     doFor(100,(i)=>{
         var pos  = clamp(i/100,0,1);
@@ -101,7 +102,7 @@ function mainLoop(time) {
     
   }
   ctx.fillStyle = skyGrad;
-  ctx.fillRect(0, 0, canvas.width, canvas.height);
+  ctx.fillRect(0, 0, bgcanvas.width, bgcanvas.height);
   doFor(starCount, (i) => stars[i].draw());
 
   requestAnimationFrame(mainLoop);

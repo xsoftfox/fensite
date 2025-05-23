@@ -3,9 +3,12 @@
     <title>hi :3</title>
     <%- include('partial/head', {title: 'index'});%>
     <meta name="description" content="new and improved™ fennec dot lol !!">
+    <link rel="preload" as="image" href=":3.png" />
+    <link rel="preload" as="image" href="x3.png" />
+    <link rel="prefetch" href="honk.ogg" />
 </head>
 
-<canvas id="canvas"></canvas>
+<canvas id="bgcanvas"></canvas>
 
 <body>
 <h1>fennec.lol</h1>
@@ -20,23 +23,12 @@ if (day == 5) { %>
     <div id="column1" class="column">
         <div id="statusCard" class="card">
             <h3>news</h3>
-            <p></p>
             <p>1/18/25 - :3</p>
-        </div>
-        <div id="musicCard" class="card">
-            <div id="overflow">
-                <h3 id="songTitle">blah blah blah blah blah blah</h3>
-            </div>
-            <span id="musicbuttons" >
-                <audio src="/files/NUMBER%2012%20COCK.opus" controls></audio>
-                <img src="/icons/skip-back.svg"></img>
-                <img src="/icons/pause.svg"></img>
-                <img src="/icons/skip-forward.svg"></img>
-            </span>
+            <p>4/30/25 - new mochi lore just dropped <a href="/mochi">go look</a> :3</p>
         </div>
         <div id="fenCard" class="card">
             <h3>random fen</h3>
-            <img id="randomFen" src="https://fendb.fennec.lol/random_image/download/fennec%20content=image"></img>
+            <img id="randomFen" src="https://stash.fennec.lol/random_image/download/fennec%20content=image"></img>
             <span id="fenbuttons" >
             <img src="/icons/refresh2.svg" onclick="getRandomFen()"></img>
             <img id="pause" src="/icons/pause.svg" onclick="pauseRandomFen()"></img>
@@ -47,7 +39,9 @@ if (day == 5) { %>
         <div id="linksCard" class="card">
             <h3>links</h3>
             <a href="/about" class="button">about</a>
-            <a href="https://fendb.fennec.lol" class="button">fen stash</a>
+            <p class="floatyright">*new and improved*</p>
+            <a href="https://stash.fennec.lol" class="button">fen stash</a>
+            <p class="floatyleft">over 5000 fens !!</p>
             <a href="https://old.fennec.lol/important" class="button">important pictures</a>
             <a href="https://old.fennec.lol/qna" class="button">ask stuff</a>
             <a href="/test" class="button">test</a>
@@ -80,6 +74,10 @@ if (day == 5) { %>
             <h3>:3</h3>
             <img src=":3.png" id="three" onclick="three()">
             <p id="threetotal">click to :3</p>
+            <audio id="honk" preload src="honk.ogg"></audio>
+            <div style="position: relative; width: 0; height: 0">
+                <canvas id="confetti"></canvas>
+            </div>
         </div>
     </div>
 </div>
@@ -87,13 +85,14 @@ if (day == 5) { %>
 </body>
 <script src="/chat/socket.io/socket.io.min.js"></script>
 <script src="/scripts/bg-effects/stars.js"></script>
+<script src="/scripts/confetti.js"></script>
 <script>
 var paused = false;
 setInterval(getRandomFen, 10000);
 
 function getRandomFen() {
     if (window.paused === false) {
-        document.getElementById('randomFen').src = "https://fendb.fennec.lol/random_image/download/fennec%20content=image?" + new Date().getTime();
+        document.getElementById('randomFen').src = "https://stash.fennec.lol/random_image/download/fennec%20content=image?" + new Date().getTime();
     }
 }
 
@@ -158,6 +157,7 @@ socket.on('chat message', (data) => {
   messages.appendChild(li);
 });
 
+//:3
 async function three() {
     new Audio("honk.ogg").play();
 
@@ -165,12 +165,51 @@ async function three() {
     document.getElementById("three").classList.add('bouncy');
     let response = await fetch('/api/:3', {method: "POST"});
     document.getElementById("threetotal").innerHTML = ":3 counter: " + await response.json();
+    if(document.getElementById("threetotal").innerHTML.match(/00$/)) {
+        shoot();
+    }
     
     setTimeout(() => {
         document.getElementById("three").src = ":3.png";
         document.getElementById("three").classList.remove('bouncy');
-    }, "500");
+    }, "400");
 
 };
+
+//confetti - https://www.npmjs.com/package/canvas-confetti
+var scalar = 2;
+var fop = confetti.shapeFromText({ text: '🦊', scalar });
+var canvas = document.getElementById('confetti');
+canvas.confetti = canvas.confetti || confetti.create(canvas, { resize: true });
+
+var defaults = {
+  spread: 50,
+  ticks: 60,
+  gravity: 1,
+  decay: 0.9,
+  startVelocity: 20,
+  shapes: [fop],
+  scalar
+};
+
+function shoot() {
+  canvas.confetti({
+    ...defaults,
+    particleCount: 10
+  });
+
+  canvas.confetti({
+    ...defaults,
+    particleCount: 5,
+    flat: true
+  });
+
+  canvas.confetti({
+    ...defaults,
+    particleCount: 5,
+    scalar: scalar / 2,
+    shapes: ['circle']
+  });
+}
 </script>
 

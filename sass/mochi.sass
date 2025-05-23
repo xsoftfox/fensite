@@ -11,7 +11,7 @@ body
 
 .ref
     max-width: 350px
-    margin: 32px auto
+    margin: 10px auto 32px auto
     border-radius: 3% 
 
 a 
@@ -40,17 +40,18 @@ button
         transform: scale(95%)
 
 ul
-    width: 165px
-    height: 2px
+    width: fit-content
     text-align: left
     margin: auto
 
 hr
-    width: 200px
+    max-width: 300px
     height: 2px
     border: 0
     background: linear-gradient(90deg, #fff0 10%, white 53%, #fff0 100%)
 
+summary
+    font-weight: bold
 
 .blur
     filter: blur(30px)
@@ -65,6 +66,7 @@ hr
 
 #colors
     margin-top: -20px
+    min-width: 365px
     p
         font-family: monospace
         display: inline-block
@@ -77,3 +79,48 @@ hr
     width: 25px
     border-radius: 50%
     display: inline-block
+
+#silly
+    animation: silly 0.3s
+    animation-direction: alternate
+    animation-timing-function: ease-out
+    animation-iteration-count: infinite
+
+#sillydiv
+    position: absolute
+    right: 20px
+    top: 10px
+    animation: sillybounce 0.15s
+    animation-direction: alternate
+    animation-timing-function: ease-out
+    animation-iteration-count: infinite
+
+#silly2
+    position: absolute
+    left: 10px
+    top: 69px
+    animation: spin 0.3s
+    //animation-direction: alternate
+    animation-timing-function: linear
+    animation-iteration-count: infinite
+
+@keyframes silly
+    from
+        transform: rotateZ(-6deg)
+        
+    to
+        transform: rotateZ(6deg) 
+
+@keyframes sillybounce
+  from
+    transform: translate(0, 12px)
+
+  to
+    transform: translate(0, 0)
+
+@keyframes spin
+    from
+        transform: rotateY(0deg)
+        
+    to
+        transform: rotateY(360deg)
